@@ -1,0 +1,26 @@
+{
+	"data":[
+		{
+			"id":"AQI0000203AA",
+			"src":"",
+			"archivage":"",
+			"insee":"16125",
+			"commune_origine":"EDON (16125) ",
+			"commune_actuelle":"EDON (16125) ",
+			"departement":"",
+			"x_wgs84":"0.378011739603",
+			"y_wgs84":"45.4772389976",
+			"precision":"5",
+			"positionnement":"précis",
+			"reperage":"orifice visible",
+			"type_cavite":"carrière",
+			"nom_cavite":"Argentine Sud 6",
+			"date":"31/12/1995",
+			"auteur":"MAZURIER VINCENT MATHON",
+			"organisme":"?",
+			"statut":"abandon",
+			"dangerosite":"?",
+			"cavites_associees":"?",
+			"commentaire":"?"
+		},
+	]
