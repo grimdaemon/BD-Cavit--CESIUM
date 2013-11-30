@@ -1,44 +1,88 @@
-var Thumbtrack = function(ellipsoid) {
-	this.lat = 0;
-	this.lon = 0;
+var Thumbtrack = function(ellipsoid, lat, lon) {
+	this.ratio = 10000;
+	this.lat = lat;
+	this.lon = lon;
 	this.ellipsoid = ellipsoid;
-
-	this.sphere = new Cesium.SphereGeometry({
-		radius: 10000
-	});
-
-	this.cylinder = new Cesium.CylinderGeometry( {
-		length: 100000,
-		topRadius: 100000,
-		bottomRadius: 1000000
-	});
 };
 
 Thumbtrack.prototype = {
+	setRatio: function(ratio) {
+		this.ratio = ratio;
+	},
+
 	setLatLon: function(lat, lon) {
 		this.lat = lat;
 		this.lon = lon;
 	},
 
-	getElements: function() {
-		/*return [
-			new Cesium.GeometryInstance({
-				geometry: this.sphere,
-				id: '5'
-			}),
-			new Cesium.GeometryInstance({
-				geometry: this.cylinder
-			})
-		];*/
-		return new Cesium.GeometryInstance({
-				geometry: this.sphere,
-				modelMatrix: Cesium.Matrix4.multiplyByTranslation(
-					Cesium.Transforms.eastNorthUpToFixedFrame(
-						this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(-100.0, 40.0))
-					),
-					new Cesium.Cartesian3(0.0, 0.0, 0)
+	getSphere: function() {
+		var sphere = new Cesium.SphereGeometry({
+			radius: this.ratio
+		});
+
+		var modelMatrix = 
+			Cesium.Matrix4.multiplyByTranslation(
+				Cesium.Transforms.eastNorthUpToFixedFrame(
+					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
 				),
-				id: '5'
-			});
+				new Cesium.Cartesian3(0.0, 0.0, this.ratio*2)
+			);
+
+		return new Cesium.GeometryInstance({
+			geometry: sphere,
+			modelMatrix: modelMatrix
+		});
+	},
+
+	getCylinder: function() {
+		var cylinder = new Cesium.CylinderGeometry({
+			length: this.ratio*2,
+			topRadius: this.ratio/4,
+			bottomRadius: this.ratio/4
+		});
+
+		var modelMatrix = 
+			Cesium.Matrix4.multiplyByTranslation(
+				Cesium.Transforms.eastNorthUpToFixedFrame(
+					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
+				),
+				new Cesium.Cartesian3(0.0, 0.0, 0.0)
+			);
+
+		return new Cesium.GeometryInstance({
+			geometry: cylinder,
+			modelMatrix: modelMatrix
+		})
+	},
+
+	getPrimitives: function() {
+		return [
+			new Cesium.Primitive({
+	        	geometryInstances: this.getCylinder(),
+	        	appearance: new Cesium.EllipsoidSurfaceAppearance({
+	        		material: new Cesium.Material({
+	        			fabric: {
+	        				type: 'Color',
+	        				uniforms: {
+	        					color: new Cesium.Color(0, 0, 0, 1)
+	        				}
+	        			}
+	        		})
+	        	})
+	        }),
+			new Cesium.Primitive({
+	            geometryInstances: this.getSphere(),
+	            appearance: new Cesium.EllipsoidSurfaceAppearance({
+	                material : new Cesium.Material({
+	                	fabric: {
+	                		type: 'Color',
+	                		uniforms: {
+	                			color: new Cesium.Color(255, 0, 0, 1)
+	                		}
+	                	}
+	                })
+       			})
+	        })
+        ];
 	}
 }
