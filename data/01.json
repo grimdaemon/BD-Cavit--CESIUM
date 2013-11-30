@@ -1,5 +1,6 @@
 {
-	"data":[
+	"data":
+	[
 		{
 			"id":"RHAAA0000001",
 			"src":"Comité Départemental de Spéléologie de l'Ain",
@@ -57269,5 +57270,6 @@
 			"dangerosite":"?",
 			"cavites_associees":"?",
 			"commentaire":"?"
-		},
+		}
 	]
+}

@@ -1,5 +1,5 @@
 var Thumbtrack = function(ellipsoid, lat, lon) {
-	this.ratio = 10000;
+	this.ratio = 100;
 	this.lat = lat;
 	this.lon = lon;
 	this.ellipsoid = ellipsoid;
@@ -25,7 +25,7 @@ Thumbtrack.prototype = {
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
 				),
-				new Cesium.Cartesian3(0.0, 0.0, this.ratio*2)
+				new Cesium.Cartesian3(0.0, 0.0, this.ratio*3)
 			);
 
 		return new Cesium.GeometryInstance({
@@ -46,7 +46,7 @@ Thumbtrack.prototype = {
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
 				),
-				new Cesium.Cartesian3(0.0, 0.0, 0.0)
+				new Cesium.Cartesian3(0.0, 0.0, this.ratio)
 			);
 
 		return new Cesium.GeometryInstance({

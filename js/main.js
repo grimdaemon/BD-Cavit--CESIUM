@@ -15,13 +15,6 @@ var main=function() { //launched when the document is ready
         var scene = viewer.scene;
         var ellipsoid = viewer.centralBody.getEllipsoid();
 
-        var t = new Thumbtrack(ellipsoid, 6, 46);
-        var elements = t.getPrimitives();
-        for(var p in elements) {
-            var plot = scene.getPrimitives().add(elements[p]);
-            plot.pickable = true;
-        }
-
         //handle click
         var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
         handlerClick.setInputAction(function (movement) {
@@ -29,35 +22,53 @@ var main=function() { //launched when the document is ready
             if (!Cesium.defined(pickedObject)) return;
             if (!pickedObject.primitive) return;
             if (!pickedObject.primitive.pickable) return;
-            var point=points[pickedObject.primitive.pointIndex];
-            Popup.open(point.name, point.desc, point["-lon"], point["-lat"]);
+            //var point=points[pickedObject.primitive.pointIndex];
+            popup.open();
             if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
 
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
         
-        var points = [];
+        //var points = [];
 
         // Loading datas
-        lib_ajax.get("data/route662.json", function(__data) {
+        lib_ajax.get("data/01.json", function(__data) {
             var data = JSON.parse(__data);
+            var boundingBox = [90, 0, 180, -180];
+
             //console.log(data);
 
             // Adding the points into the scene
-            var dataPoints = data.gpx.wpt;
+            var dataPoints = data.data;
             dataPoints.map(function(point, i) {
-                var lat = parseFloat(point["-lat"]),
-                    lon = parseFloat(point["-lon"]);
+                var lat = parseFloat(point["x_wgs84"]);
+                var lon = parseFloat(point["y_wgs84"]);
+                if(lat < boundingBox[0])
+                    boundingBox[0] = lat;
+                if(lat > boundingBox[1])
+                    boundingBox[1] = lat;
+                if(lon < boundingBox[2])
+                    boundingBox[2] = lon;
+                if(lon > boundingBox[3])
+                    boundingBox[3] = lon;
+                if(point["type_cavite"] == "naturelle") {
 
-                points.push(Cesium.Cartographic.fromDegrees(lon, lat));
+                    var t = new Thumbtrack(ellipsoid, lat, lon);
+                    var elements = t.getPrimitives();
+                    for(var p in elements) {
+                        var plot = scene.getPrimitives().add(elements[p]);
+                        plot.pickable = true;
+                    }
+                }
+                //points.push(Cesium.Cartographic.fromDegrees(lon, lat));
             });
             
             // Defining the extent
-            var boundingBox = data.gpx.metadata.bounds;
+            console.log(boundingBox);
             var extent = new Cesium.Extent(
-                Cesium.Math.toRadians(4.7666),
-                Cesium.Math.toRadians(42.3294),
-                Cesium.Math.toRadians(8.245),
-                Cesium.Math.toRadians(51.0964));
+                Cesium.Math.toRadians(boundingBox[0]),
+                Cesium.Math.toRadians(boundingBox[2]),
+                Cesium.Math.toRadians(boundingBox[1]),
+                Cesium.Math.toRadians(boundingBox[3]));
                 /*Cesium.Math.toRadians(boundingBox["-minlon"]),
                 Cesium.Math.toRadians(boundingBox["-minlat"]),
                 Cesium.Math.toRadians(boundingBox["-maxlon"]),
