@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cesium Boilerplate</title>
+  <title>Bd Cavite - Cesium</title>
   <script type="text/javascript" src="cesium/Build/Cesium/Cesium.js"></script>
   <script type="text/javascript" src="js/script.php"></script>
 
@@ -31,5 +31,10 @@
 <body onload="main()">
   <!-- CESIUM VIEW //-->
   <div id="cesiumContainer"></div>
+  <div class="popup" id="popup">
+      <button class="close" onclick="popup.close()">X</button>
+      <div class="title" style="display:block" id="popupTitle"></div>
+      <div class="text" id="popupText"></div>      
+  </div>
 </body>
 </html>

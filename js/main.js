@@ -17,9 +17,24 @@ var main=function() { //launched when the document is ready
 
         var t = new Thumbtrack(ellipsoid, 6, 46);
         var elements = t.getPrimitives();
-        for(var p in elements) 
-            scene.getPrimitives().add(elements[p]);
+        for(var p in elements) {
+            var plot = scene.getPrimitives().add(elements[p]);
+            plot.pickable = true;
+        }
 
+        //handle click
+        var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
+        handlerClick.setInputAction(function (movement) {
+            var pickedObject = scene.pick(movement.position);
+            if (!Cesium.defined(pickedObject)) return;
+            if (!pickedObject.primitive) return;
+            if (!pickedObject.primitive.pickable) return;
+            var point=points[pickedObject.primitive.pointIndex];
+            Popup.open(point.name, point.desc, point["-lon"], point["-lat"]);
+            if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
+
+        }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+        
         var points = [];
 
         // Loading datas
@@ -35,7 +50,7 @@ var main=function() { //launched when the document is ready
 
                 points.push(Cesium.Cartographic.fromDegrees(lon, lat));
             });
-
+            
             // Defining the extent
             var boundingBox = data.gpx.metadata.bounds;
             var extent = new Cesium.Extent(

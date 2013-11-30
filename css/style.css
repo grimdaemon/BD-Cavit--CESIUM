@@ -1,0 +1,27 @@
+.popup {
+     display: none; 
+     position: absolute;
+     width: 400px;
+     background-color: rgba(255,255,255,0.75);
+     color: black;
+     font-family: 'Helvetica';
+     margin: 10px;
+}
+
+.popup .close {
+     margin: 5px;
+     float: right;
+}
+
+.popup .title {
+     margin: 15px;
+     font-size: 15pt;
+     text-align: center;
+     font-weight: bold;
+}
+
+.popup .text {
+     margin: 20px;
+     font-size: 10pt;
+     text-align: justify;
+}
