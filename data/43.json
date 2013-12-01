@@ -4855,7 +4855,7 @@
 		},
 		{
 			"id":"AUVCS00003803",
-			"src":"ARCHIVES ADMINISTRATIVES		, , ARCHIVES BRGM",
+			"src":"ARCHIVES ADMINISTRATIVES, ARCHIVES BRGM",
 			"archivage":"DRIRE CLERMONT-FERRAND, , BRGM CLERMONT-FERRAND",
 			"insee":"43131",
 			"commune_origine":"MAZERAT-AUROUZE (43131) ",
@@ -5384,7 +5384,7 @@
 		},
 		{
 			"id":"AUVCS00013629",
-			"src":"rapport BRGM  RP 50447  (2000)	",
+			"src":"rapport BRGM  RP 50447  (2000)",
 			"archivage":"BRGM, , DRIRE",
 			"insee":"43031",
 			"commune_origine":"BLASSAC (43031) ",
