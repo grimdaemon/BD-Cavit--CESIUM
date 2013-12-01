@@ -15,9 +15,61 @@ var popup=(function() {
 
             //text
             var text=document.getElementById("popupText");
-            var contentHtml="<li>Type de Cavité : "+point["type_cavite"]+"</li><li>Statut de la Cavité : "+point["statut"]+"</li><li>Département : "+point["departement"]+"</li><li>Commune d'origine : "+point["commune_origine"]+"</li><li>Commune actuelle : "+point["commune_actuelle"]+"</li><li>Repérage : "+point["reperage"]+"</li><li>Longitude : "+point["x_wgs84"]+"</li><li>Latitude : "+point["y_wgs84"]+"</li><li>Précision : "+point["precision"]+"</li><li>Positionnement : "+point["positionnement"]+"</li><li>Dangerosité : "+point["dangerosite"]+"</li><li>Cavités Associées : "+point["cavites_associees"]+"</li><li>Commentaires : "+point["commentaire"]+"</li>";
-            text.innerHTML="<div class=\"text\"><a>Informations de la Cavité :</a></div><ul>"+contentHtml+"</ul><br><div class=\"infos\"> Source : "+point["src"]+", INSEE : "+point["insee"]+", Identifiant : "+point["id"]+", Archivage : "+point["archivage"]+", Date : "+point["date"]+", Auteur : "+point["auteur"]+", Organisme : "+point["organisme"]+"</div>";
+            text.innerHTML="<div class=\"text\"><a>Informations de la Cavité :</a></div><ul>"+popup.readData(point)+"</ul><br>"+popup.readInfos(point)+".</div>";
 
+        },
+
+        readData: function(point){
+            var contentHtml = "";
+            var labels ={
+                "type_cavite" : "Type de cavité : ",
+                "statut" : "Statut : ",
+                "departement" : "Département : ",
+                "commune_origine" : "Commune d'origine : ",
+                "commune_actuelle" : "Commune Actuelle : ",
+                "reperage" : "Repérage : ",
+                "x_wgs84" : "Longitude : ",
+                "y_wgs84" : "Latitude : ",
+                "precision" : "Précision : ",
+                "positionnement" : "Positionnement : ",
+                "dangerosite" : "Dangerosité : ",
+                "cavites_associees" : "Cavités Associées : ",
+                "commentaire" : "Commentaire : "
+            };
+            for(var e in point) {
+                if(labels[e] != undefined){
+                    console.log(point[e])
+                    if(point[e] != ""){
+                        if(point[e] != "?"){
+                            contentHtml += "<li>"+labels[e]+point[e]+"</li>";
+                        }
+                    }
+                }
+            }
+            return contentHtml;
+        },
+
+        readInfos: function(point){
+            var contentHtml = "<div class=\"infos\">";
+            var labels ={
+                "src" : "Source : ",
+                "insee" : "INSEE : ",
+                "id" : "Identifiant : ",
+                "archivage" : "Archivage : ",
+                "date" : "Date : ",
+                "auteur" : "Auteur : ",
+                "organisme" : "Organisme : "
+            };
+            for(var e in point) {
+                if(labels[e] != undefined){
+                    if(point[e] != ""){
+                        if(point[e] != "?"){
+                            contentHtml += labels[e]+point[e]+", ";
+                        }
+                    }
+                }
+            }
+            return contentHtml.substring(0 , contentHtml.length-2);
         },
 
         close: function() {
