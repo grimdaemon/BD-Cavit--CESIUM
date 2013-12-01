@@ -2210,7 +2210,7 @@
 		},
 		{
 			"id":"PACAA0004032",
-			"src":"Préfecture, CDS04  Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Préfecture, CDS04  Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04050",
 			"commune_origine":"CHATEAUFORT (04050) ",
@@ -2279,7 +2279,7 @@
 		},
 		{
 			"id":"PACAA0004035",
-			"src":"Préfecture, CDS04  Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Préfecture, CDS04  Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04051",
 			"commune_origine":"CHATEAUNEUF-MIRAVAIL (04051) ",
@@ -2555,7 +2555,7 @@
 		},
 		{
 			"id":"PACAA0004047",
-			"src":"Préfecture, CDS04  Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.  IGN 3540E",
+			"src":"Préfecture, CDS04  Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.  IGN 3540E",
 			"archivage":"",
 			"insee":"04061",
 			"commune_origine":"COLMARS (04061) ",
@@ -6074,7 +6074,7 @@
 		},
 		{
 			"id":"PACAA0004201",
-			"src":"Association "Les amis des Mées", bulletin annuel 2006",
+			"src":"Association \"Les amis des Mées\", bulletin annuel 2006",
 			"archivage":"",
 			"insee":"04116",
 			"commune_origine":"LES MEES (04116) ",
@@ -6088,7 +6088,7 @@
 			"type_cavite":"ouvrage_civil",
 			"nom_cavite":"de Font-Neuve",
 			"date":"01/07/2008",
-			"auteur":"Association "Les amis des Mée"",
+			"auteur":"Association \"Les amis des Mée\"",
 			"organisme":"?",
 			"statut":"abandon",
 			"dangerosite":"?",
@@ -6097,7 +6097,7 @@
 		},
 		{
 			"id":"PACAA0004202",
-			"src":"Association "Les amis des Mées", bulletin annuel 2006",
+			"src":"Association \"Les amis des Mées\", bulletin annuel 2006",
 			"archivage":"",
 			"insee":"04116",
 			"commune_origine":"LES MEES (04116) ",
@@ -6111,7 +6111,7 @@
 			"type_cavite":"naturelle",
 			"nom_cavite":"de la Chapelle Saint-Roch",
 			"date":"01/07/2008",
-			"auteur":"Association "Les amis des Mée"",
+			"auteur":"Association \"Les amis des Mée\"",
 			"organisme":"?",
 			"statut":"abandon",
 			"dangerosite":"?",
@@ -6143,7 +6143,7 @@
 		},
 		{
 			"id":"PACAA0004204",
-			"src":"Association "Les amis des Mées", bulletin annuel 2006",
+			"src":"Association \"Les amis des Mées\", bulletin annuel 2006",
 			"archivage":"",
 			"insee":"04116",
 			"commune_origine":"LES MEES (04116) ",
@@ -6157,7 +6157,7 @@
 			"type_cavite":"ouvrage_civil",
 			"nom_cavite":"de la combe",
 			"date":"01/07/2008",
-			"auteur":"Association "Les amis des Mée"",
+			"auteur":"Association \"Les amis des Mée\"",
 			"organisme":"?",
 			"statut":"abandon",
 			"dangerosite":"?",
@@ -7040,7 +7040,7 @@
 		},
 		{
 			"id":"PACAA0004243",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04161",
 			"commune_origine":"MEOLANS-REVEL (04161) ",
@@ -7063,7 +7063,7 @@
 		},
 		{
 			"id":"PACAA0004244",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04161",
 			"commune_origine":"MEOLANS-REVEL (04161) ",
@@ -7086,7 +7086,7 @@
 		},
 		{
 			"id":"PACAA0004245",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04161",
 			"commune_origine":"MEOLANS-REVEL (04161) ",
@@ -8282,7 +8282,7 @@
 		},
 		{
 			"id":"PACAA0004297",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.  Préfecture, CDS04",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.  Préfecture, CDS04",
 			"archivage":"",
 			"insee":"04132",
 			"commune_origine":"MONTSALIER (04132) ",
@@ -8696,7 +8696,7 @@
 		},
 		{
 			"id":"PACAA0004315",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04139",
 			"commune_origine":"NOYERS-SUR-JABRON (04139) ",
@@ -8719,7 +8719,7 @@
 		},
 		{
 			"id":"PACAA0004316",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04139",
 			"commune_origine":"NOYERS-SUR-JABRON (04139) ",
@@ -8788,7 +8788,7 @@
 		},
 		{
 			"id":"PACAA0004319",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.",
 			"archivage":"",
 			"insee":"04139",
 			"commune_origine":"NOYERS-SUR-JABRON (04139) ",
@@ -11709,7 +11709,7 @@
 		},
 		{
 			"id":"PACAA0004449",
-			"src":"CREAC'H (1987)  POELL (1995)  Préfecture, CDS04  BSS  Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.  IGN 3442E  Carte géologique n° 970 Moustier  Carte du Service Géologique de l'Armée n° 970 8X Moustier, 1936",
+			"src":"CREAC'H (1987)  POELL (1995)  Préfecture, CDS04  BSS  Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.  IGN 3442E  Carte géologique n° 970 Moustier  Carte du Service Géologique de l'Armée n° 970 8X Moustier, 1936",
 			"archivage":"",
 			"insee":"04171",
 			"commune_origine":"ROUGON (04171) ",
@@ -14423,7 +14423,7 @@
 		},
 		{
 			"id":"PACAA0004568",
-			"src":"Site Internet spécialisé "Alpes Spéléo", Bigot J-Y.  Préfecture, CDS04",
+			"src":"Site Internet spécialisé \"Alpes Spéléo\", Bigot J-Y.  Préfecture, CDS04",
 			"archivage":"",
 			"insee":"04208",
 			"commune_origine":"SIMIANE-LA-ROTONDE (04208) ",

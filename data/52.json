@@ -16551,7 +16551,7 @@
 			"positionnement":"précis",
 			"reperage":"orifice visible",
 			"type_cavite":"naturelle",
-			"nom_cavite":"Ruisseau souterrain "Devant Gue"",
+			"nom_cavite":"Ruisseau souterrain \"Devant Gue\"",
 			"date":"01/11/2009",
 			"auteur":"?",
 			"organisme":"?",
@@ -16574,7 +16574,7 @@
 			"positionnement":"précis",
 			"reperage":"orifice visible",
 			"type_cavite":"naturelle",
-			"nom_cavite":""Devant Gue", boyau de Marnaval",
+			"nom_cavite":"\"Devant Gue\", boyau de Marnaval",
 			"date":"01/11/2011",
 			"auteur":"?",
 			"organisme":"?",
@@ -21733,7 +21733,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"source "miraculeuse", "guérisseuse""
+			"commentaire":"source \"miraculeuse\", \"guérisseuse\""
 		},
 		{
 			"id":"CHAAW0017671",
