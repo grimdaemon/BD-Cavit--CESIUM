@@ -25,6 +25,11 @@ var main=function() { //launched when the document is ready
             for(var i = 0; i < radios.length; ++i) 
                 radios[i].disabled = true;            
             
+            if(id == 75 || id == 92 || id == 93 || id == 94 || id == 91 || id == 95 || id == 78) {
+                alert("Pas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
+                return;
+            }
+            
             var extent = new Cesium.Extent(
                 Cesium.Math.toRadians(data["long_min"]),
                 Cesium.Math.toRadians(data["lat_min"]),
