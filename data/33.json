@@ -1286,7 +1286,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité  localement affaissée, effondrement évolutif., , 3 Evenements sont rapportés sur cette cavité :, , - Fiche BDMVT 633 00110 : Un effondrement partiel par rupture des piliers avait provoqué le 18 février 1970  (L2e  X : 378 286  Y : 1 981 032  z = 45 m) des affaissements important dans le hameau de CIton. Ce hameau avait été évacué, il est depuis à l'abandon. , , - Fiche BDMVT 203 00102 : Fissures rapportées vers 1960  au nord de Citon (WGS84  X : -0,46400°  Y : 44,79555° coordonnées aproximatives), , - Fiche BDMVT 203 00104 : affaissement de1,5 m rapporté en 1003 au Sud Est de Citon de part et d'autre du Chemin des Morts (WGS84  X : -0,46240°  Y : 44,79329°  coordonnées aproximatives) , , La carrière souterraine presente des piliers en mauvais états en de nombreux points : Panneaux de pilliers effondrés, pilliers en "diabolo",  tassements du toit sur quelques centimètres., , Le point est situé au centroide de l'emprise connue de la carrières (115 Ha). Il existe de très nombreuses entrées horizontales et puits (appelé "aplomb" en Gironde). On compte jusqu'a 4 niveaux de carrières dans le Calcaire à Asteries exploités pour la pierre de taille (source principale de pierre pour la construction de Bordeaux), avec une profondeur variable (jusqu'a 45 m de profondeur)., , Risque d'effondrement"
+			"commentaire":"Cavité  localement affaissée, effondrement évolutif., , 3 Evenements sont rapportés sur cette cavité :, , - Fiche BDMVT 633 00110 : Un effondrement partiel par rupture des piliers avait provoqué le 18 février 1970  (L2e  X : 378 286  Y : 1 981 032  z = 45 m) des affaissements important dans le hameau de CIton. Ce hameau avait été évacué, il est depuis à l'abandon. , , - Fiche BDMVT 203 00102 : Fissures rapportées vers 1960  au nord de Citon (WGS84  X : -0,46400°  Y : 44,79555° coordonnées aproximatives), , - Fiche BDMVT 203 00104 : affaissement de1,5 m rapporté en 1003 au Sud Est de Citon de part et d'autre du Chemin des Morts (WGS84  X : -0,46240°  Y : 44,79329°  coordonnées aproximatives) , , La carrière souterraine presente des piliers en mauvais états en de nombreux points : Panneaux de pilliers effondrés, pilliers en \"diabolo\",  tassements du toit sur quelques centimètres., , Le point est situé au centroide de l'emprise connue de la carrières (115 Ha). Il existe de très nombreuses entrées horizontales et puits (appelé \"aplomb\" en Gironde). On compte jusqu'a 4 niveaux de carrières dans le Calcaire à Asteries exploités pour la pierre de taille (source principale de pierre pour la construction de Bordeaux), avec une profondeur variable (jusqu'a 45 m de profondeur)., , Risque d'effondrement"
 		},
 		{
 			"id":"AQIAA0020061",
@@ -7818,7 +7818,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité localement effondrée, effondrement évolutif, , - Carrière souterraine d'emprise importante : 42.7 Ha à cheval sur deux communes : St Germain du Puch et Croignon., - L'etat des pilliers est par endroit dégradé (fissuration imoprtante)., - Il existe des zones habitées rurales de faible densité et une usine au dessus de ces carrières sans confortement., - Les galeries sont par endroit en partie noyées, - 3 événements majeur ont été observés sur ces carrières sur la commune de St Germain du Pucha u Nord : ,                            - 1988 affaissement de la "parcelle 104" au Nord du lieu dit "La Manière" (une habitation non occupé).,                             - 2008 affaissement de 40 cm environ au lieu dit "Gazeau" (plusieurs constructions touchés et évacué).,                             - 08 février 2011 (entre 14 et 15h) : Au lieu dit " La Manière", effondrement d'une surface de 5000 m² provoquand un cratere ovoides de 2 m de profondeur (plusieurs constructions ruinés ou évacués). On a observé au fond d'une rupture généralisé des piliers au droit de la zone., , , Risques d'effondrements"
+			"commentaire":"Cavité localement effondrée, effondrement évolutif, , - Carrière souterraine d'emprise importante : 42.7 Ha à cheval sur deux communes : St Germain du Puch et Croignon., - L'etat des pilliers est par endroit dégradé (fissuration imoprtante)., - Il existe des zones habitées rurales de faible densité et une usine au dessus de ces carrières sans confortement., - Les galeries sont par endroit en partie noyées, - 3 événements majeur ont été observés sur ces carrières sur la commune de St Germain du Pucha u Nord : ,                            - 1988 affaissement de la \"parcelle 104\" au Nord du lieu dit \"La Manière\" (une habitation non occupé).,                             - 2008 affaissement de 40 cm environ au lieu dit \"Gazeau\" (plusieurs constructions touchés et évacué).,                             - 08 février 2011 (entre 14 et 15h) : Au lieu dit \" La Manière\", effondrement d'une surface de 5000 m² provoquand un cratere ovoides de 2 m de profondeur (plusieurs constructions ruinés ou évacués). On a observé au fond d'une rupture généralisé des piliers au droit de la zone., , , Risques d'effondrements"
 		},
 		{
 			"id":"AQIAA0020364",
@@ -12836,7 +12836,7 @@
 		},
 		{
 			"id":"AQIAA0020584",
-			"src":"Rapport Expertise BRGM n° 86 AQI 19 - Effondrement au lieu dit "Mauhagarat"",
+			"src":"Rapport Expertise BRGM n° 86 AQI 19 - Effondrement au lieu dit \"Mauhagarat\"",
 			"archivage":"BRGM",
 			"insee":"33435",
 			"commune_origine":"SAINT-MACAIRE (33435) ",
@@ -29323,7 +29323,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Effondrement d'une cinquantaine de m² et de 3 m de profondeur , causant la mort d'une personne et faisant 2 blessés., Phénomène survenant sur un des lots du lotissmeent "la Pinède de l'Océan" lors de travaux de forage d'eau."
+			"commentaire":"Effondrement d'une cinquantaine de m² et de 3 m de profondeur , causant la mort d'une personne et faisant 2 blessés., Phénomène survenant sur un des lots du lotissmeent \"la Pinède de l'Océan\" lors de travaux de forage d'eau."
 		},
 		{
 			"id":"AQIAA0021346",
@@ -35878,7 +35878,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Affaissement survenu sur la parcelle AI28, "ayant déjà été comblé dans les années 1975-80"."
+			"commentaire":"Affaissement survenu sur la parcelle AI28, \"ayant déjà été comblé dans les années 1975-80\"."
 		},
 		{
 			"id":"AQIAW0021264",
@@ -35901,7 +35901,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Fontis survenu en même temps (28/09/2006) que l'effondrement ayant causé un mort et deux blessés au droit d'un lot du lotissement "la Pinède de l'Océan" (fiche AQIAA0021344)."
+			"commentaire":"Fontis survenu en même temps (28/09/2006) que l'effondrement ayant causé un mort et deux blessés au droit d'un lot du lotissement \"la Pinède de l'Océan\" (fiche AQIAA0021344)."
 		},
 		{
 			"id":"AQIAW0021266",
@@ -35947,7 +35947,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Fontis de 8 m de diamètre découvert mi-avril 1998, au PR1+507 de la RD117. , Existence étude CETE, dossier "le sable"."
+			"commentaire":"Fontis de 8 m de diamètre découvert mi-avril 1998, au PR1+507 de la RD117. , Existence étude CETE, dossier \"le sable\"."
 		},
 		{
 			"id":"AQIAW0021268",
@@ -35993,7 +35993,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Mention "affaissement sous limite garage (7 brouettes)" apparaissant sur un plan du Biureau des carrières.  Pas d'autre précision."
+			"commentaire":"Mention \"affaissement sous limite garage (7 brouettes)\" apparaissant sur un plan du Biureau des carrières.  Pas d'autre précision."
 		},
 		{
 			"id":"AQIAW0021278",

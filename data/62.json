@@ -1217,7 +1217,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : Craie, Age : Sénonien, Classe de surface :  > 10000 m2, , ADRESSE:, Au lieu-dit:" Le chemin des Boeufs", , Commentaires: , Pour cette cavité, nous disposons uniquement d'une carte de localisation dans laquelle elle est bien délimitée. , "
+			"commentaire":"Matériau creusé : Craie, Age : Sénonien, Classe de surface :  > 10000 m2, , ADRESSE:, Au lieu-dit:\" Le chemin des Boeufs\", , Commentaires: , Pour cette cavité, nous disposons uniquement d'une carte de localisation dans laquelle elle est bien délimitée. , "
 		},
 		{
 			"id":"NPC0000060AA",
@@ -2620,7 +2620,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"pas d'information sur cette cavité., Situation : lieu-dit "Les Vaux""
+			"commentaire":"pas d'information sur cette cavité., Situation : lieu-dit \"Les Vaux\""
 		},
 		{
 			"id":"NPC0000129AA",
@@ -3126,7 +3126,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: "Le bois de la Falise", (à l'Ouest), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique "description", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
+			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: \"Le bois de la Falise\", (à l'Ouest), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique \"description\", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
 		},
 		{
 			"id":"NPC0000300AA",
@@ -3149,7 +3149,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: "Le bois de la Falise", (au milieu), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique "description", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
+			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: \"Le bois de la Falise\", (au milieu), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique \"description\", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
 		},
 		{
 			"id":"NPC0000301AA",
@@ -3172,7 +3172,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: "Le bois de la Falise", (à l'Est), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique "description", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
+			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: \"Le bois de la Falise\", (à l'Est), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique \"description\", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
 		},
 		{
 			"id":"NPC0000302AA",
@@ -3195,7 +3195,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: "Le bois de la Falise", (à l'Est), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique "description", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
+			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: \"Le bois de la Falise\", (à l'Est), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique \"description\", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
 		},
 		{
 			"id":"NPC0000303AA",
@@ -3218,7 +3218,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: "Le bois de la Falise", (à l'Ouest), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique "description", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
+			"commentaire":"ADRESSE:, RUE DE WAMIN, au lieu-dit: \"Le bois de la Falise\", (à l'Ouest), , ACCES:, Présence de 5 accès à 15 m de la ROUTE DE WAMIN, , DESORDRES:, Eboulement par accès effondré, aux mêmes coordonnées que dans la rubrique \"description\", , COMMENTAIRES:, Il s'agit de 5 tunnels creusés par les Allemnads, il existait des chambres (45/35m de longueur pour 3.25m de largeur et 3.25m de hauteur). Les tunnels mesuraient 100 à 120 de longueur., Chaque tunnel avait son entrée située à 15m de la ROUTE DE WAMIN, elles étaient espacées de 50m et 2 de ces entrées correspondaient entre elles."
 		},
 		{
 			"id":"NPC0000304AA",
@@ -5909,7 +5909,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé :  craie, Age :  Sénonien, , ADRESSE:, Au carrefour des rues DES TILLEULS/DES ECOLES/D'ENFER/DES MOULINS, , Désordres : , Affaissement aux coordonnées de la rubrique "description""
+			"commentaire":"Matériau creusé :  craie, Age :  Sénonien, , ADRESSE:, Au carrefour des rues DES TILLEULS/DES ECOLES/D'ENFER/DES MOULINS, , Désordres : , Affaissement aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000425AA",
@@ -6300,7 +6300,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":""voir étude micro-gravimètrique de 1994", fiabilité avérée"
+			"commentaire":"\"voir étude micro-gravimètrique de 1994\", fiabilité avérée"
 		},
 		{
 			"id":"NPC0000446AA",
@@ -7266,7 +7266,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Entre la CITE FOCH et l'AVENUE DU BOIS, , DESORDRES:, Il s'agit d'une zone d'effondrements qui se trouve près d 'abris (RUE DU GENERAL DE GAULLE), aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, Entre la CITE FOCH et l'AVENUE DU BOIS, , DESORDRES:, Il s'agit d'une zone d'effondrements qui se trouve près d 'abris (RUE DU GENERAL DE GAULLE), aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000503AA",
@@ -7289,7 +7289,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée/ ADRESSE: Au croisement du CHEMIN D'EXPLOITATION N°28 (ZO 28) et LA RUE DE QUOEUX (au lieu-dit:"Les Carrières"). / COMMENTAIRES: carrière avec départ de 3 galerie. "
+			"commentaire":"Cavité avérée/ ADRESSE: Au croisement du CHEMIN D'EXPLOITATION N°28 (ZO 28) et LA RUE DE QUOEUX (au lieu-dit:\"Les Carrières\"). / COMMENTAIRES: carrière avec départ de 3 galerie. "
 		},
 		{
 			"id":"NPC0000504AA",
@@ -7312,7 +7312,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, A l'angle de la RUELLE DES FONTAINES et LA PLACE VERTE (à l'emplacement de l'ancien chateau)  référence cadastrale : 000 AB 547/67, , DESORDRES:, Un affaissement a eu lieu en 2002, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, A l'angle de la RUELLE DES FONTAINES et LA PLACE VERTE (à l'emplacement de l'ancien chateau)  référence cadastrale : 000 AB 547/67, , DESORDRES:, Un affaissement a eu lieu en 2002, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000505AA",
@@ -7358,7 +7358,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, 39/41/43 RUE DE NOEUX  référence cadastrale: 000 AR 26/28/29, , DESORDRES:, Il s'agit d'une zone d'effondrements aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, 39/41/43 RUE DE NOEUX  référence cadastrale: 000 AR 26/28/29, , DESORDRES:, Il s'agit d'une zone d'effondrements aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000507AA",
@@ -7404,7 +7404,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Entre les RUES D'HAUTEVILLE et CHARLEMAGNE BROCQ, , DESORDRES:, Il s'agit d'une zone d'effondrements où se trouvait un ancien four à chaux, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, Entre les RUES D'HAUTEVILLE et CHARLEMAGNE BROCQ, , DESORDRES:, Il s'agit d'une zone d'effondrements où se trouvait un ancien four à chaux, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000509AA",
@@ -7427,7 +7427,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Au croisement des RUES NIZART et DES CORONS, , COMMENTAIRES:, Il s'agit d'une zone d'effondrements se trouvant près de galeries, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, Au croisement des RUES NIZART et DES CORONS, , COMMENTAIRES:, Il s'agit d'une zone d'effondrements se trouvant près de galeries, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000510AA",
@@ -7450,7 +7450,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, RUE FRANCOIS MITTERRAND, , DESORDRES:, Zone d'effondrements, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, RUE FRANCOIS MITTERRAND, , DESORDRES:, Zone d'effondrements, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000511AA",
@@ -7588,7 +7588,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, A l'angle DES RUES MACLOU/BASSE COUR/DE LA POSTE, , DESORDRES:, Il s'agit d'une zone d'effondrements se trouvant près d'une galerie, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, A l'angle DES RUES MACLOU/BASSE COUR/DE LA POSTE, , DESORDRES:, Il s'agit d'une zone d'effondrements se trouvant près d'une galerie, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000517AA",
@@ -7611,7 +7611,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Longe la GRANDE RUE, , COMMENTAIRES:, Il s'agit d'une zone d'effondrements, aux coordonnées de la rubrique "descrition""
+			"commentaire":"ADRESSE:, Longe la GRANDE RUE, , COMMENTAIRES:, Il s'agit d'une zone d'effondrements, aux coordonnées de la rubrique \"descrition\""
 		},
 		{
 			"id":"NPC0000518AA",
@@ -7634,7 +7634,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Longe la GRANDE RUE, , DESORDRES:, Il s'agit d'une zone d'effondrements se trouvant près de galeries, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, Longe la GRANDE RUE, , DESORDRES:, Il s'agit d'une zone d'effondrements se trouvant près de galeries, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPC0000519AA",
@@ -7749,7 +7749,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé: craie, Age: Sénonien, , Adresse: rue de la République, Référence cadastre: AC-252  AB-389, , Désordres: inconnu, , Le lieu dit " Le Bastion de la Reine" où ont été signalés des souterrauins, n'existe plus."
+			"commentaire":"Matériau creusé: craie, Age: Sénonien, , Adresse: rue de la République, Référence cadastre: AC-252  AB-389, , Désordres: inconnu, , Le lieu dit \" Le Bastion de la Reine\" où ont été signalés des souterrauins, n'existe plus."
 		},
 		{
 			"id":"NPC0000524AA",
@@ -9451,7 +9451,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Accés : inconnu, , Désordres :, Effondrement sur le chemin du lieu dit "Fond d'Ecoust""
+			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Accés : inconnu, , Désordres :, Effondrement sur le chemin du lieu dit \"Fond d'Ecoust\""
 		},
 		{
 			"id":"NPC0000778AA",
@@ -9474,7 +9474,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : Craie, Age : Sénonien, , Lieu dit : " la voie des Prêtre", , Accés : inconnu, , Désordres : Un ancien effondrement rebouché s'est  à nouveau effondré en 2001. Il s'agirait d'un ancien hopital militaire édifié lors de la guerre 1914-1918.,  "
+			"commentaire":"Matériau creusé : Craie, Age : Sénonien, , Lieu dit : \" la voie des Prêtre\", , Accés : inconnu, , Désordres : Un ancien effondrement rebouché s'est  à nouveau effondré en 2001. Il s'agirait d'un ancien hopital militaire édifié lors de la guerre 1914-1918.,  "
 		},
 		{
 			"id":"NPC0000780AA",
@@ -11084,7 +11084,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : , RUE DE FLANDRE, , Commentaires : , Une amorce de fontis ("renard") a été décelée en 1982 au niveau de ces lotissements de coordonnées, en Lambert2 étendu:,                         X = 637442.8m                      Y = 2605328.6m, Cette cavité est peut être liée aux sapes de guerres supposées rue JEAN WARIN, "
+			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : , RUE DE FLANDRE, , Commentaires : , Une amorce de fontis (\"renard\") a été décelée en 1982 au niveau de ces lotissements de coordonnées, en Lambert2 étendu:,                         X = 637442.8m                      Y = 2605328.6m, Cette cavité est peut être liée aux sapes de guerres supposées rue JEAN WARIN, "
 		},
 		{
 			"id":"NPC0000861AA",
@@ -12119,7 +12119,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Fiabilité avérée, matériaux creusés : Craie du Coniacien, Situation : entre Grand Rue, rue d'Abancourt, rue Neuve., Descriptif : Ces carrières apparemment étendus (« plus de 100 salles"), ayant servi de muches et de Défense Passive en 1944. Accessible par 2 escaliers. Une ffondrement d'un diamètre de 1.50m est survenu à proximité de la rue Neuve., Plan disponible en archive."
+			"commentaire":"Fiabilité avérée, matériaux creusés : Craie du Coniacien, Situation : entre Grand Rue, rue d'Abancourt, rue Neuve., Descriptif : Ces carrières apparemment étendus (« plus de 100 salles\"), ayant servi de muches et de Défense Passive en 1944. Accessible par 2 escaliers. Une ffondrement d'un diamètre de 1.50m est survenu à proximité de la rue Neuve., Plan disponible en archive."
 		},
 		{
 			"id":"NPC0000937AA",
@@ -12533,7 +12533,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Fiabilité : avérée., Absence de plan en archive., Descriptif : effondrement de 1.5m de diamètre et "trés" profond (pas de mesure)."
+			"commentaire":"Fiabilité : avérée., Absence de plan en archive., Descriptif : effondrement de 1.5m de diamètre et \"trés\" profond (pas de mesure)."
 		},
 		{
 			"id":"NPC0000993AA",
@@ -12832,7 +12832,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"aussi appelée "Colonne d'Helfaut", "On mentionne  des carrières souterraines à l'Obélisque et au lieu-dit Noir Cornet", Matériau exploité = Sables et grès Thanétien"
+			"commentaire":"aussi appelée \"Colonne d'Helfaut\", \"On mentionne  des carrières souterraines à l'Obélisque et au lieu-dit Noir Cornet\", Matériau exploité = Sables et grès Thanétien"
 		},
 		{
 			"id":"NPC0001006AA",
@@ -12878,7 +12878,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : Lieu dit "La Montagne", , Tunnel creusé par l'armée allemande."
+			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : Lieu dit \"La Montagne\", , Tunnel creusé par l'armée allemande."
 		},
 		{
 			"id":"NPC0001008AA",
@@ -12924,7 +12924,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"NPCAW0017241,",
-			"commentaire":"Adresse:, Au lieu dit : "Le Chemin de Dufayel" , référence cadastrale : 000 ZE 52, , Commentaires:, Il s'agit de tunnels allemands partant de blockhaus"
+			"commentaire":"Adresse:, Au lieu dit : \"Le Chemin de Dufayel\" , référence cadastrale : 000 ZE 52, , Commentaires:, Il s'agit de tunnels allemands partant de blockhaus"
 		},
 		{
 			"id":"NPC0001010AA",
@@ -13752,7 +13752,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, CHEMIN partant de la RUE DE LA CULBUTE (direction Nord), , DESORDRES:, Effondrement d'une profondeur de 10m pour 2.5m de diamètre (en forme de bouteille) aux mêmes coordonnées que dans la rubrique "description""
+			"commentaire":"ADRESSE:, CHEMIN partant de la RUE DE LA CULBUTE (direction Nord), , DESORDRES:, Effondrement d'une profondeur de 10m pour 2.5m de diamètre (en forme de bouteille) aux mêmes coordonnées que dans la rubrique \"description\""
 		},
 		{
 			"id":"NPCAW0007868",
@@ -14143,7 +14143,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ARRAS au lieu-dit :" le derrière du faubourg" référence cadastrale : 000 ZI 46"
+			"commentaire":"ADRESSE:, ROUTE D'ARRAS au lieu-dit :\" le derrière du faubourg\" référence cadastrale : 000 ZI 46"
 		},
 		{
 			"id":"NPCAW0007931",
@@ -14166,7 +14166,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit :"le derrière du faubourg"  , référence cadastrale : 000 ZI 83"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit :\"le derrière du faubourg\"  , référence cadastrale : 000 ZI 83"
 		},
 		{
 			"id":"NPCAW0007932",
@@ -14189,7 +14189,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET AU LIEU-DIT : "le derrière du faubourg"   référence cadastrale : 000 ZI 82"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET AU LIEU-DIT : \"le derrière du faubourg\"   référence cadastrale : 000 ZI 82"
 		},
 		{
 			"id":"NPCAW0007933",
@@ -14212,7 +14212,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: "le derrière du faubourg"  référence cadastrale: 000 ZI 82"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: \"le derrière du faubourg\"  référence cadastrale: 000 ZI 82"
 		},
 		{
 			"id":"NPCAW0007934",
@@ -14235,7 +14235,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET  au lieu-dit : "le dessous du calvaire" référence cadastrale : 000 AA 20 "
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET  au lieu-dit : \"le dessous du calvaire\" référence cadastrale : 000 AA 20 "
 		},
 		{
 			"id":"NPCAW0007935",
@@ -14258,7 +14258,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: "le derrière du faubourg"  référence cadastrale: 000 ZI 82"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: \"le derrière du faubourg\"  référence cadastrale: 000 ZI 82"
 		},
 		{
 			"id":"NPCAW0007936",
@@ -14281,7 +14281,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: "le derrière du faubourg"  référence cadastrale: 000 ZI 82"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: \"le derrière du faubourg\"  référence cadastrale: 000 ZI 82"
 		},
 		{
 			"id":"NPCAW0007938",
@@ -14304,7 +14304,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: "le derrière du faubourg"  référence cadastrale: 000 ZI 82"
+			"commentaire":"ADRESSE:, ROUTE D'ACHIET au lieu-dit: \"le derrière du faubourg\"  référence cadastrale: 000 ZI 82"
 		},
 		{
 			"id":"NPCAW0007939",
@@ -17248,7 +17248,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Au lieu-dit : " la cour de Dourges", , ACCES:, Un puits d'entrée conduisait à une longue galerie, , COMMENTAIRES:, Profondeur: entre 5/6m, "
+			"commentaire":"ADRESSE:, Au lieu-dit : \" la cour de Dourges\", , ACCES:, Un puits d'entrée conduisait à une longue galerie, , COMMENTAIRES:, Profondeur: entre 5/6m, "
 		},
 		{
 			"id":"NPCAW0008708",
@@ -19709,7 +19709,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée. / Matériau creusé : craie Age : Sénonien. / Localisation: Lieu dit "Le Chauffour"au Nord-Est de la commune./Accés : inconnu. "
+			"commentaire":"Cavité avérée. / Matériau creusé : craie Age : Sénonien. / Localisation: Lieu dit \"Le Chauffour\"au Nord-Est de la commune./Accés : inconnu. "
 		},
 		{
 			"id":"NPCAW0010011",
@@ -19916,7 +19916,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"NPCAW0010738,NPCAW0014772,NPCAW0014778,",
-			"commentaire":"Les sapes de guerre sont réparties sur toute la commune, , Parmis les cavités associées, il y a Moeuvres, une commune du Nord et donc pas recensée dans la rubrique "cavités associées""
+			"commentaire":"Les sapes de guerre sont réparties sur toute la commune, , Parmis les cavités associées, il y a Moeuvres, une commune du Nord et donc pas recensée dans la rubrique \"cavités associées\""
 		},
 		{
 			"id":"NPCAW0010048",
@@ -20100,7 +20100,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : lieu dit "Le Mont" encore appelé "les carrières de Bergueneuse", , Commentaires :, Il s¿agit de 3 galeries parallèles voutées et bétonnées construites par l¿armée allemande en 1942-1943. Ces galeries ont une largeur comprise entre 3.40 m et 5m pour une hauteur de 1.70 m.  , "
+			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Adresse : lieu dit \"Le Mont\" encore appelé \"les carrières de Bergueneuse\", , Commentaires :, Il s¿agit de 3 galeries parallèles voutées et bétonnées construites par l¿armée allemande en 1942-1943. Ces galeries ont une largeur comprise entre 3.40 m et 5m pour une hauteur de 1.70 m.  , "
 		},
 		{
 			"id":"NPCAW0010087",
@@ -20859,7 +20859,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Commentaire : , Dans sa partie visible située sous l'église, ce souterrain refuge comporte une galerie principale qui donne accès à quatre chambres. , Selon la légende, une issue existerait au lieu dit "La Calanée"."
+			"commentaire":"Matériau creusé : craie, Age : Sénonien, , Commentaire : , Dans sa partie visible située sous l'église, ce souterrain refuge comporte une galerie principale qui donne accès à quatre chambres. , Selon la légende, une issue existerait au lieu dit \"La Calanée\"."
 		},
 		{
 			"id":"NPCAW0010236",
@@ -21503,7 +21503,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Souterrain reliant "les bureaux centraux aux équipages" travers la rue Jean Souvraz, ACCES: escalier rue Jean Souvraz         X = 634707.1m      Y = 2604460.1m"
+			"commentaire":"Souterrain reliant \"les bureaux centraux aux équipages\" travers la rue Jean Souvraz, ACCES: escalier rue Jean Souvraz         X = 634707.1m      Y = 2604460.1m"
 		},
 		{
 			"id":"NPCAW0010381",
@@ -22584,7 +22584,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Adresse:, A26, au lieu dit "les Ecouloirs", référence cadastrale: 000 ZO 5, , Désordre:, Eboulement par accès effondré, , Commentaires:, Cette carrière aurait peut-être servi durant la guerre car sur le plan une tranchée traverse cette cavité, Il se peut aussi qu'elle soit liée aux cavités indéterminées suivantes: NPCAW0013418 NPCAW0013420 et NPCAW0013422  car se trouvant très proche de la carrière, Profondeur min et max du toit: 3.48 à 4.95m, Profondeur min et max de la base: 4 à6.43m, Hauteur de vide: 0.60 à 2.20m"
+			"commentaire":"Adresse:, A26, au lieu dit \"les Ecouloirs\", référence cadastrale: 000 ZO 5, , Désordre:, Eboulement par accès effondré, , Commentaires:, Cette carrière aurait peut-être servi durant la guerre car sur le plan une tranchée traverse cette cavité, Il se peut aussi qu'elle soit liée aux cavités indéterminées suivantes: NPCAW0013418 NPCAW0013420 et NPCAW0013422  car se trouvant très proche de la carrière, Profondeur min et max du toit: 3.48 à 4.95m, Profondeur min et max de la base: 4 à6.43m, Hauteur de vide: 0.60 à 2.20m"
 		},
 		{
 			"id":"NPCAW0010505",
@@ -26057,7 +26057,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité supposée. , Aucun plan en archive., "Des carrières existeraient le long du CD123, au nord du village.""
+			"commentaire":"Cavité supposée. , Aucun plan en archive., \"Des carrières existeraient le long du CD123, au nord du village.\""
 		},
 		{
 			"id":"NPCAW0013352",
@@ -26195,7 +26195,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée., Absence de plan en archive., Descriptif : 3 effondrements de terrain recensés dans les champs au lieu-dit "le Fond de Neuville"."
+			"commentaire":"Cavité avérée., Absence de plan en archive., Descriptif : 3 effondrements de terrain recensés dans les champs au lieu-dit \"le Fond de Neuville\"."
 		},
 		{
 			"id":"NPCAW0013369",
@@ -26379,7 +26379,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée., Absence de plan en archive., Matériau creusé : Craie et Limons., Profondeur : 5 à 6 m., Type d'accès :  bouche de cavage au lieudit "les onze", puits au hameau St-Josse-au-Bois et caves de la ferme voisine."
+			"commentaire":"Cavité avérée., Absence de plan en archive., Matériau creusé : Craie et Limons., Profondeur : 5 à 6 m., Type d'accès :  bouche de cavage au lieudit \"les onze\", puits au hameau St-Josse-au-Bois et caves de la ferme voisine."
 		},
 		{
 			"id":"NPCAW0013389",
@@ -26839,7 +26839,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée., Absence de plan en archive., Description : effondrement/fontis situé au lieudit "LE VIEUX BOIS""
+			"commentaire":"Cavité avérée., Absence de plan en archive., Description : effondrement/fontis situé au lieudit \"LE VIEUX BOIS\""
 		},
 		{
 			"id":"NPCAW0013418",
@@ -26977,7 +26977,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":""on mentionne des carrières souterraines à l’Obélisque et au lieu-dit Noir Cornet » "
+			"commentaire":"\"on mentionne des carrières souterraines à l’Obélisque et au lieu-dit Noir Cornet » "
 		},
 		{
 			"id":"NPCAW0013424",
@@ -30841,7 +30841,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"A l'arrière de la mairie, il existe un puits aujourd'hui comblé. Une étude menée au sein de l'IME "Les Verts Tilleuls" a permis de mettre à jour une ancienne carrière souterraine.  Les clichés ont montré l'existence d'une salle au moins (profondeur du toit : environ 16 m, de la base : environ 30 mètres), d'un volume important, pour laquelle il ne faut pas exclure le risque d'effondrement."
+			"commentaire":"A l'arrière de la mairie, il existe un puits aujourd'hui comblé. Une étude menée au sein de l'IME \"Les Verts Tilleuls\" a permis de mettre à jour une ancienne carrière souterraine.  Les clichés ont montré l'existence d'une salle au moins (profondeur du toit : environ 16 m, de la base : environ 30 mètres), d'un volume important, pour laquelle il ne faut pas exclure le risque d'effondrement."
 		},
 		{
 			"id":"NPCAW0014799",
@@ -31554,7 +31554,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Au lieu-dit : "la Bouvache",   c'est une cavité supposée, , "
+			"commentaire":"ADRESSE:, Au lieu-dit : \"la Bouvache\",   c'est une cavité supposée, , "
 		},
 		{
 			"id":"NPCAW0015362",
@@ -33486,7 +33486,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"NPCAW0016404,",
-			"commentaire":"ADRESSE:, 527 BOULEVRAD CHARLES FONTAINE   référence cadastrale : 000 AE 345, , CAVITE : supposée., , COMMENTAIRES: , Il s'agit d'une descente construite par les allemands (guerre 14-18), de ces souterrains partait un boyau qui se dirigeait vers le lieu-dit "le bois de sapins" (commune de IZEL LES EQUERCHIN)  où existaient 2 sorties bétonnées aujourd'hui comblées., "
+			"commentaire":"ADRESSE:, 527 BOULEVRAD CHARLES FONTAINE   référence cadastrale : 000 AE 345, , CAVITE : supposée., , COMMENTAIRES: , Il s'agit d'une descente construite par les allemands (guerre 14-18), de ces souterrains partait un boyau qui se dirigeait vers le lieu-dit \"le bois de sapins\" (commune de IZEL LES EQUERCHIN)  où existaient 2 sorties bétonnées aujourd'hui comblées., "
 		},
 		{
 			"id":"NPCAW0016404",
@@ -33509,7 +33509,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"NPCAW0016382,",
-			"commentaire":"ADRESSE:, Au lieu-dit :"le bois de sapin"   référence cadastrale : 000 ZN 87, , COMMENTAIRES:, Il s'agit de 2 sorties bétonnées qui sont comblées aujourd'hui, se dirigant vers la gare de Hénin-Beaumont."
+			"commentaire":"ADRESSE:, Au lieu-dit :\"le bois de sapin\"   référence cadastrale : 000 ZN 87, , COMMENTAIRES:, Il s'agit de 2 sorties bétonnées qui sont comblées aujourd'hui, se dirigant vers la gare de Hénin-Beaumont."
 		},
 		{
 			"id":"NPCAW0016437",
@@ -33962,7 +33962,7 @@
 			"positionnement":"approché",
 			"reperage":"autre",
 			"type_cavite":"indetermine",
-			"nom_cavite":"lieu-dit "Vers Riencourt"",
+			"nom_cavite":"lieu-dit \"Vers Riencourt\"",
 			"date":"01/01/1111",
 			"auteur":"?",
 			"organisme":"?",
@@ -34038,7 +34038,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Fiabilité : cavité supposée, " La rumeur public fait savoir qu'il y aurait un tunnel qui relierait Buire-le-Sec à Valloires.""
+			"commentaire":"Fiabilité : cavité supposée, \" La rumeur public fait savoir qu'il y aurait un tunnel qui relierait Buire-le-Sec à Valloires.\""
 		},
 		{
 			"id":"NPCAW0016776",
@@ -34590,7 +34590,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, HOTEL DE VILLE RUE DU GENERAL DE GAULLE, , ACCES:, Présence d'une descenderie au niveau du parterre rond en face de l'hotel de ville, aux coordonnées de la rubrique "description""
+			"commentaire":"ADRESSE:, HOTEL DE VILLE RUE DU GENERAL DE GAULLE, , ACCES:, Présence d'une descenderie au niveau du parterre rond en face de l'hotel de ville, aux coordonnées de la rubrique \"description\""
 		},
 		{
 			"id":"NPCAW0017068",
@@ -34613,7 +34613,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"ADRESSE:, Au lieu-dit:" La Montagne", coté Artois, , COMMENTAIRES:, Il s'agit d'un réseau de caves (salles et galeries) assez dense communiquant parfois, certaines caves se trouvent sur 2 étages (à fonction de citerne)"
+			"commentaire":"ADRESSE:, Au lieu-dit:\" La Montagne\", coté Artois, , COMMENTAIRES:, Il s'agit d'un réseau de caves (salles et galeries) assez dense communiquant parfois, certaines caves se trouvent sur 2 étages (à fonction de citerne)"
 		},
 		{
 			"id":"NPCAW0017069",
@@ -34866,7 +34866,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Présence de deux effondrement au lieu-dit "Le bras d'or".  L'origine supposée pourrait être une carrière souterraine., , Matériau creusé : Loess (en surface) et craie "
+			"commentaire":"Présence de deux effondrement au lieu-dit \"Le bras d'or\".  L'origine supposée pourrait être une carrière souterraine., , Matériau creusé : Loess (en surface) et craie "
 		},
 		{
 			"id":"NPCAW0017082",
@@ -34935,7 +34935,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Présence de cinq effondrements dont l'origine est inconnue.  Origine supposée : carrière souterraine (galerie supposée au niveau du lieu-dit des "prés de la marcadée", , Matériau creusé : Craie (Coniacien), "
+			"commentaire":"Présence de cinq effondrements dont l'origine est inconnue.  Origine supposée : carrière souterraine (galerie supposée au niveau du lieu-dit des \"prés de la marcadée\", , Matériau creusé : Craie (Coniacien), "
 		},
 		{
 			"id":"NPCAW0017085",
@@ -34981,7 +34981,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Deux efffondrements au niveau du lieu-dit "Le Mont BoisJean", , Matériau creusé : Loess"
+			"commentaire":"Deux efffondrements au niveau du lieu-dit \"Le Mont BoisJean\", , Matériau creusé : Loess"
 		},
 		{
 			"id":"NPCAW0017087",
@@ -35050,7 +35050,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Présence de 2 puits au niveau du lieu-dit : "Le Fond des Granges"., , Matériau creusé : Loess"
+			"commentaire":"Présence de 2 puits au niveau du lieu-dit : \"Le Fond des Granges\"., , Matériau creusé : Loess"
 		},
 		{
 			"id":"NPCAW0017090",
@@ -35073,7 +35073,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Deux effondrements au niveau du lieu-dit : "Le Chemin des Bois""
+			"commentaire":"Deux effondrements au niveau du lieu-dit : \"Le Chemin des Bois\""
 		},
 		{
 			"id":"NPCAW0017092",
@@ -35832,7 +35832,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Présence d'un tunnel ferroviaire qui débouchait à plus d'un kilomètre au Nord-Est du Village (Lieu-dit : "Au fond des Onze")"
+			"commentaire":"Présence d'un tunnel ferroviaire qui débouchait à plus d'un kilomètre au Nord-Est du Village (Lieu-dit : \"Au fond des Onze\")"
 		},
 		{
 			"id":"NPCAW0017158",
@@ -36085,7 +36085,7 @@
 			"statut":"indéterminé",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Adresse:, Cimetière Britannique, au lieu-dit: "entre deux bois", référence cadastrale: 000 ZB 28, , Désordres:, 2 fontis se sont déclarés vers l'est, dans le prolongement du chemin menant au cimetière britannique"
+			"commentaire":"Adresse:, Cimetière Britannique, au lieu-dit: \"entre deux bois\", référence cadastrale: 000 ZB 28, , Désordres:, 2 fontis se sont déclarés vers l'est, dans le prolongement du chemin menant au cimetière britannique"
 		},
 		{
 			"id":"NPCAW0017204",
@@ -36568,7 +36568,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"NPC0001009AA,",
-			"commentaire":"Adresse:, Au lieu-dit : "Doux Rietz" , référence cadastrale: 000 AH 162, , Commentaires: , Il s'agit de tunnels allemands partant de blockhaus"
+			"commentaire":"Adresse:, Au lieu-dit : \"Doux Rietz\" , référence cadastrale: 000 AH 162, , Commentaires: , Il s'agit de tunnels allemands partant de blockhaus"
 		},
 		{
 			"id":"NPCAW0017242",
@@ -41812,7 +41812,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"2 effondrements à l'ancien lieu-di- : "derrière les Haies" Cadastre : A 527"
+			"commentaire":"2 effondrements à l'ancien lieu-di- : \"derrière les Haies\" Cadastre : A 527"
 		},
 		{
 			"id":"NPCAW0017650",
@@ -41881,7 +41881,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"cavité avérée. / 3 effondrements en 1935 au lieudit "Les Muids". Repérage du point au milieu de la rue de Douai."
+			"commentaire":"cavité avérée. / 3 effondrements en 1935 au lieudit \"Les Muids\". Repérage du point au milieu de la rue de Douai."
 		},
 		{
 			"id":"NPCAW0017653",
@@ -43606,7 +43606,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Saps de 8m de profondeur à proximité de la rue Jules Ferry au lieu-dit des "Cornailles"."
+			"commentaire":"Saps de 8m de profondeur à proximité de la rue Jules Ferry au lieu-dit des \"Cornailles\"."
 		},
 		{
 			"id":"NPCAW0017738",
@@ -44572,7 +44572,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée., Effondrement de terrain ayant révélé la présence d'une sape de guerre., situation : proche du lieudit "La Marie"."
+			"commentaire":"Cavité avérée., Effondrement de terrain ayant révélé la présence d'une sape de guerre., situation : proche du lieudit \"La Marie\"."
 		},
 		{
 			"id":"NPCAW0017783",
@@ -44917,7 +44917,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Localisée au niveau du lieu-dit : "Les Revers", cette carrière possède une entrée sur le chemin de Bomy. , Il s'agit d'une exploitation mixte. En effet, elle a débuté en catiches, elle est composée de galeries de différentes tailles, certaine s'apparentant à des chambres, des piliers sont aussi présents., , De nombreux objets datant du XIV au XVIème siécle ont été découvert. Ces derniers ont permis d'en apprendre plus quand à l'ancienne ville de Thérouanne entièrement détruite au XVI siècle par Charles Quint., , Cette exploitation recèle d'objets et de crypte antiques., Effondrement de terrain."
+			"commentaire":"Localisée au niveau du lieu-dit : \"Les Revers\", cette carrière possède une entrée sur le chemin de Bomy. , Il s'agit d'une exploitation mixte. En effet, elle a débuté en catiches, elle est composée de galeries de différentes tailles, certaine s'apparentant à des chambres, des piliers sont aussi présents., , De nombreux objets datant du XIV au XVIème siécle ont été découvert. Ces derniers ont permis d'en apprendre plus quand à l'ancienne ville de Thérouanne entièrement détruite au XVI siècle par Charles Quint., , Cette exploitation recèle d'objets et de crypte antiques., Effondrement de terrain."
 		},
 		{
 			"id":"NPCAW0017799",
@@ -44940,7 +44940,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Carrière en puits et galerie datant de 1800-1850. Elle mesure environ 100m sur 150m de long.  /, , Entrée : lieu-dit "Les Fosses machaut". /, , Effondrement de terrain."
+			"commentaire":"Carrière en puits et galerie datant de 1800-1850. Elle mesure environ 100m sur 150m de long.  /, , Entrée : lieu-dit \"Les Fosses machaut\". /, , Effondrement de terrain."
 		},
 		{
 			"id":"NPCAW0017800",
@@ -45216,7 +45216,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Présence de 18 effondrements sur le lieu-dit : "La pointe", limité à l'Ouest par la commune de Cuinchy et à l'Est par la D75."
+			"commentaire":"Présence de 18 effondrements sur le lieu-dit : \"La pointe\", limité à l'Ouest par la commune de Cuinchy et à l'Est par la D75."
 		},
 		{
 			"id":"NPCAW0017813",
@@ -45354,7 +45354,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Effondrement important au lieu-dit : "Chemin des Colombiers"."
+			"commentaire":"Effondrement important au lieu-dit : \"Chemin des Colombiers\"."
 		},
 		{
 			"id":"NPCAW0017819",
@@ -45469,7 +45469,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Sape au lieu-dit : "Le buisson"."
+			"commentaire":"Sape au lieu-dit : \"Le buisson\"."
 		},
 		{
 			"id":"NPCAW0017824",
@@ -45630,7 +45630,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Souterrain de l'ancien presbytère à la"motte""
+			"commentaire":"Souterrain de l'ancien presbytère à la\"motte\""
 		},
 		{
 			"id":"NPCAW0017831",
@@ -48751,7 +48751,7 @@
 			"positionnement":"imprécis",
 			"reperage":"centre cavité",
 			"type_cavite":"indetermine",
-			"nom_cavite":"Lieudit "La Voix du Charme"",
+			"nom_cavite":"Lieudit \"La Voix du Charme\"",
 			"date":"01/07/2012",
 			"auteur":"?",
 			"organisme":"?",
@@ -49793,7 +49793,7 @@
 			"statut":"indéterminée",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Cavité avérée. / 2 effondrements de terrain au hameau "Le Fresne""
+			"commentaire":"Cavité avérée. / 2 effondrements de terrain au hameau \"Le Fresne\""
 		},
 		{
 			"id":"NPCAW0020549",
@@ -53155,7 +53155,7 @@
 		},
 		{
 			"id":"NPCCS00013222",
-			"src":""Les souterrains du Nord-Pas-de-Calais", BIVERT, 1988, ISBN : 2-950-2930-0-X",
+			"src":"\"Les souterrains du Nord-Pas-de-Calais\", BIVERT, 1988, ISBN : 2-950-2930-0-X",
 			"archivage":"BRGM Lezennes",
 			"insee":"62005",
 			"commune_origine":"ACHIET-LE-GRAND (62005) ",

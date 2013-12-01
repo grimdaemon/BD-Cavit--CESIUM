@@ -4,7 +4,7 @@
  *
  */
 //list of allowed domains
-$ALLOWED=Array("http://server.arcgisonline.com", "http://cesium.agi.com/blackmarble");
+$ALLOWED=Array("http://server.arcgisonline.com", "http://cesium.agi.com/blackmarble", "http://tile.openstreetmap.org/");
 
 //get URL to display
 $URL=$_GET["url"];

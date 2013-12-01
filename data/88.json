@@ -297,7 +297,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":""Cette fracture a une profondeur d'environ 23 mètres. Le puit d'accès mesure 17 mètres. un développement de 104 mètres. Sa largeur varie de 1,5 mètres à 0,3 mètres pour les parties pénétrables." source HADES N°7 1983.  La FFS - CDS Vosges  a répertorié la Diaclase du Bois de l'Enfer  (date de validité 1982) et le Gouffre du Tarzan (date de validité 1976) avec des coordonnées géographiques identiques."
+			"commentaire":"\"Cette fracture a une profondeur d'environ 23 mètres. Le puit d'accès mesure 17 mètres. un développement de 104 mètres. Sa largeur varie de 1,5 mètres à 0,3 mètres pour les parties pénétrables.\" source HADES N°7 1983.  La FFS - CDS Vosges  a répertorié la Diaclase du Bois de l'Enfer  (date de validité 1982) et le Gouffre du Tarzan (date de validité 1976) avec des coordonnées géographiques identiques."
 		},
 		{
 			"id":"LORAW0013101",
@@ -3747,7 +3747,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"La FFS-CDS88 la nomme aussi "Grotte aux (des) Voleurs""
+			"commentaire":"La FFS-CDS88 la nomme aussi \"Grotte aux (des) Voleurs\""
 		},
 		{
 			"id":"LORAW0013466",
@@ -8600,7 +8600,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"LORAW0013600,",
-			"commentaire":"Non retrouvé car rebouché, vu avec un habitant d'Essegney en utilisant le terme "entonnoir"."
+			"commentaire":"Non retrouvé car rebouché, vu avec un habitant d'Essegney en utilisant le terme \"entonnoir\"."
 		},
 		{
 			"id":"LORAW0017407",

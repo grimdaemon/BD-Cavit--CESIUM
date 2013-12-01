@@ -412,7 +412,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Souterrain refuge reliant selon les dires des "Anciens" les châteaux de Cernon et de Saint-Quentin-sur-Coole., Affaissement devant l'église et le presbytère sans doute du à la présence du souterrrain (pas de date précise pour cet évènement)."
+			"commentaire":"Souterrain refuge reliant selon les dires des \"Anciens\" les châteaux de Cernon et de Saint-Quentin-sur-Coole., Affaissement devant l'église et le presbytère sans doute du à la présence du souterrrain (pas de date précise pour cet évènement)."
 		},
 		{
 			"id":"CHAAW0001443",
@@ -1148,7 +1148,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Il est fait mention dans les documents d'archives (notariales) des ""Perrières Notre-Dame"". , Le point a été localisé au milieu du ""chemin des Perrières Notre-Dame"" d'après le plan Blay des rues de Châlons-en-Champagne., "
+			"commentaire":"Il est fait mention dans les documents d'archives (notariales) des \"\"Perrières Notre-Dame\"\". , Le point a été localisé au milieu du \"\"chemin des Perrières Notre-Dame\"\" d'après le plan Blay des rues de Châlons-en-Champagne., "
 		},
 		{
 			"id":"CHAAW0001477",
@@ -1286,7 +1286,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Il est fait mention dans le document d'archives d'une ""perrière proche de la cense du moulin à vent de St-Memmie, exploitée par 2 perriers châlonnais"., Des photos de plans anciens nous ont permis de localiser de façon approchée l'emplacement de cette exploit", "
+			"commentaire":"Il est fait mention dans le document d'archives d'une \"\"perrière proche de la cense du moulin à vent de St-Memmie, exploitée par 2 perriers châlonnais\"., Des photos de plans anciens nous ont permis de localiser de façon approchée l'emplacement de cette exploit\", "
 		},
 		{
 			"id":"CHAAW0001483",
@@ -1562,7 +1562,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : "On en découvrit un (souterrain), peu avant 1896, sous une maison de la rue de Marne, près du Pont de Nau"., "
+			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : \"On en découvrit un (souterrain), peu avant 1896, sous une maison de la rue de Marne, près du Pont de Nau\"., "
 		},
 		{
 			"id":"CHAAW0001501",
@@ -1585,7 +1585,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : "En partie bouché en 1896, il (le souterrain) traversait plusieurs immeubles de la rue des Cordeliers"., "
+			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : \"En partie bouché en 1896, il (le souterrain) traversait plusieurs immeubles de la rue des Cordeliers\"., "
 		},
 		{
 			"id":"CHAAW0001521",
@@ -1631,7 +1631,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : "Au coin de la rue du Parlement, on a mis à jour, en 1800, un vaste conduit souterrain qui se dirigeait du côté de l'hôpital. L'entrée a été fermée par un mur.", "
+			"commentaire":"Il s'agit d'un souterrain mentionné dans un document des archives municipales : \"Au coin de la rue du Parlement, on a mis à jour, en 1800, un vaste conduit souterrain qui se dirigeait du côté de l'hôpital. L'entrée a été fermée par un mur.\", "
 		},
 		{
 			"id":"CHAAW0001523",
@@ -1700,7 +1700,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":""Il s'agit uniquement d'informations orales., Cette voie, qui ravitaillait le front, était souterraine depuis Corbineau jusqu'à la Maltournée (actuelle Croix Jean Robert). Cette voie reliait Sommes-Vesles à Coolus. La gare souterraine se trouverait à St-Memmie", "
+			"commentaire":"\"Il s'agit uniquement d'informations orales., Cette voie, qui ravitaillait le front, était souterraine depuis Corbineau jusqu'à la Maltournée (actuelle Croix Jean Robert). Cette voie reliait Sommes-Vesles à Coolus. La gare souterraine se trouverait à St-Memmie\", "
 		},
 		{
 			"id":"CHAAW0001529",
@@ -2613,7 +2613,7 @@
 			"positionnement":"approché",
 			"reperage":"orifice visible",
 			"type_cavite":"carriere",
-			"nom_cavite":"Entre "les Vignes" et "Champ Dindon"",
+			"nom_cavite":"Entre \"les Vignes\" et \"Champ Dindon\"",
 			"date":"01/01/2009",
 			"auteur":"?",
 			"organisme":"?",
@@ -2728,7 +2728,7 @@
 			"positionnement":"approché",
 			"reperage":"orifice supposé",
 			"type_cavite":"ouv_militaire",
-			"nom_cavite":"Entre "les Trous de Leu" et "les Gros Chardons"",
+			"nom_cavite":"Entre \"les Trous de Leu\" et \"les Gros Chardons\"",
 			"date":"01/01/2009",
 			"auteur":"?",
 			"organisme":"?",
@@ -5633,7 +5633,7 @@
 			"statut":"abandon",
 			"dangerosite":"?",
 			"cavites_associees":"?",
-			"commentaire":"Communique avec la carrière localisée au même lieu-dit "la Maladrerie"."
+			"commentaire":"Communique avec la carrière localisée au même lieu-dit \"la Maladrerie\"."
 		},
 		{
 			"id":"CHAAW0002779",
