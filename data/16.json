@@ -13,7 +13,7 @@
 			"precision":"5",
 			"positionnement":"précis",
 			"reperage":"orifice visible",
-			"type_cavite":"carrière",
+			"type_cavite":"carriere",
 			"nom_cavite":"Argentine Sud 6",
 			"date":"31/12/1995",
 			"auteur":"MAZURIER VINCENT MATHON",
@@ -22,5 +22,6 @@
 			"dangerosite":"?",
 			"cavites_associees":"?",
 			"commentaire":"?"
-		},
+		}
 	]
+}
