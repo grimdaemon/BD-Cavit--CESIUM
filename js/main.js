@@ -103,6 +103,7 @@ var main=function() { //launched when the document is ready
         });
         
 
+
         // Reference to the layers of cesium
         layers = viewer.centralBody.getImageryLayers();
         scene = viewer.scene;
