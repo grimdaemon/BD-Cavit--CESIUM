@@ -17,6 +17,7 @@ var main=function() { //launched when the document is ready
             return false;
         }, false);
 
+        /*
         //open viewer using NASA cool tiles
         viewer = new Cesium.CesiumWidget('cesiumContainer', {
             imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
@@ -24,6 +25,16 @@ var main=function() { //launched when the document is ready
                 proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
             })
         });
+        */
+       
+        
+        viewer = new Cesium.CesiumWidget('cesiumContainer', {
+            imageryProvider : new Cesium.OpenStreetMapImageryProvider({
+                url : 'http://tile.openstreetmap.org/',
+                proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
+            })
+        });
+        
 
         // Reference to the layers of cesium
         layers = viewer.centralBody.getImageryLayers();
