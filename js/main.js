@@ -42,6 +42,7 @@ var main=function() { //launched when the document is ready
                         for(var p in elements) {
                             var plot = scene.getPrimitives().add(elements[p]);
                             plot.pickable = true;
+                            plot.pointIndex=i;
                         }
                     }
                     
@@ -65,18 +66,16 @@ var main=function() { //launched when the document is ready
                 if (!pickedObject.primitive) return;
                 if (!pickedObject.primitive.pickable) return;
                 var point=dataPoints[pickedObject.primitive.pointIndex];
-                popup.open(point);//["nom_cavite"],point["commune_actuelle"],point["positionnement"],parseFloat(point["x_wgs84"]),parseFloat(point["y_wgs84"]));
+                popup.open(point);
                 if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
-
             }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
             // Defining the extent
-            console.log(boundingBox);
             var extent = new Cesium.Extent(
-                Cesium.Math.toRadians(boundingBox[0]),
-                Cesium.Math.toRadians(boundingBox[2]),
-                Cesium.Math.toRadians(boundingBox[1]),
-                Cesium.Math.toRadians(boundingBox[3]));
+ +              Cesium.Math.toRadians(4.7243),
+ +              Cesium.Math.toRadians(43.7281),
+ +              Cesium.Math.toRadians(6.7243),
+ +              Cesium.Math.toRadians(47.7281));
                 /*Cesium.Math.toRadians(boundingBox["-minlon"]),
                 Cesium.Math.toRadians(boundingBox["-minlat"]),
                 Cesium.Math.toRadians(boundingBox["-maxlon"]),
