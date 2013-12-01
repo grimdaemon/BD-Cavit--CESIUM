@@ -17,7 +17,9 @@ Thumbtrack.prototype = {
 
 	getSphere: function() {
 		var sphere = new Cesium.SphereGeometry({
-			radius: this.ratio
+			radius: this.ratio,
+			stackPartitions: 3,
+			slicePartitions: 3
 		});
 
 		var modelMatrix = 
@@ -38,7 +40,8 @@ Thumbtrack.prototype = {
 		var cylinder = new Cesium.CylinderGeometry({
 			length: this.ratio*2,
 			topRadius: this.ratio/4,
-			bottomRadius: this.ratio/4
+			bottomRadius: this.ratio/4,
+			slices: 4
 		});
 
 		var modelMatrix = 

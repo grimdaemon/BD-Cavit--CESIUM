@@ -33,42 +33,37 @@ var main=function() { //launched when the document is ready
         // Loading datas
         lib_ajax.get("data/01.json", function(__data) {
             var data = JSON.parse(__data);
-            var boundingBox = [90, 0, 180, -180];
-
-            //console.log(data);
 
             // Adding the points into the scene
             var dataPoints = data.data;
-            dataPoints.map(function(point, i) {
-                var lat = parseFloat(point["x_wgs84"]);
-                var lon = parseFloat(point["y_wgs84"]);
-                if(lat < boundingBox[0])
-                    boundingBox[0] = lat;
-                if(lat > boundingBox[1])
-                    boundingBox[1] = lat;
-                if(lon < boundingBox[2])
-                    boundingBox[2] = lon;
-                if(lon > boundingBox[3])
-                    boundingBox[3] = lon;
-                if(point["type_cavite"] == "naturelle") {
-
-                    var t = new Thumbtrack(ellipsoid, lat, lon);
-                    var elements = t.getPrimitives();
-                    for(var p in elements) {
-                        var plot = scene.getPrimitives().add(elements[p]);
-                        plot.pickable = true;
+            var i = 0, limit = dataPoints.length, busy = false;
+            var process = setInterval(function() {
+                if(!busy) {
+                    busy = true;
+                    var point = dataPoints[i]; 
+                    var lat = parseFloat(point["x_wgs84"]);
+                    var lon = parseFloat(point["y_wgs84"]);
+                    if(point["type_cavite"] == "naturelle") {
+                        var t = new Thumbtrack(ellipsoid, lat, lon);
+                        var elements = t.getPrimitives();
+                        for(var p in elements) {
+                            var plot = scene.getPrimitives().add(elements[p]);
+                            plot.pickable = true;
+                        }
                     }
+
+                    if(++i == limit)
+                        clearInterval(process);
+                    busy = false;
                 }
-                //points.push(Cesium.Cartographic.fromDegrees(lon, lat));
-            });
-            
-            // Defining the extent
-            console.log(boundingBox);
+            }, 10);
+
+            // Defining the extent 
             var extent = new Cesium.Extent(
-                Cesium.Math.toRadians(boundingBox[0]),
-                Cesium.Math.toRadians(boundingBox[2]),
-                Cesium.Math.toRadians(boundingBox[1]),
-                Cesium.Math.toRadians(boundingBox[3]));
+                Cesium.Math.toRadians(4.7243),
+                Cesium.Math.toRadians(43.7281),
+                Cesium.Math.toRadians(6.7243),
+                Cesium.Math.toRadians(47.7281));
                 /*Cesium.Math.toRadians(boundingBox["-minlon"]),
                 Cesium.Math.toRadians(boundingBox["-minlat"]),
                 Cesium.Math.toRadians(boundingBox["-maxlon"]),
@@ -82,5 +77,6 @@ var main=function() { //launched when the document is ready
             scene.getAnimations().add(flight);
         });
     }
+
     run();
 };
