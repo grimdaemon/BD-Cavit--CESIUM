@@ -33,9 +33,9 @@
   <!-- CESIUM VIEW //-->
   <div id="cesiumContainer"></div>
   <div class="popup" id="popup">
-    <button class="close" onclick="popup.close()">X</button>
+    <button class="button" onclick="popup.close()">X</button>
     <div class="title" style="display:block" id="popupTitle"></div>
-    <div class="text" id="popupText"></div>      
+    <div id="popupText"></div>      
   </div>
   <div id="loading">
     <div class="text" id="loadingText">Chargement : 0 / ?</div>      
@@ -43,7 +43,8 @@
   <div class="footer" id="legend">
       <a class="title">Légende</a><br>
       <a class="subtitle">Département:</a>
-      <input class="text" type="text" name="dep" value=" Saisir dpt de 01 à 90"><br>
+      <input class="text" type="text" name="dep" value="01 à 90"/>
+      <button class="button" onclick="filter()">Ok</button><br>
       <a class="subtitle">Type de données:</a><br>
       <ul class="list" id="legend">
         <li><input id="legend_carriere" disabled="true" type="radio" name="type" value="carrière">Carrière</li>
@@ -55,7 +56,7 @@
         <li><input id="legend_puits" disabled="true" type="radio" name="type" value="puits">Puits</li>
         <li><input id="legend_naturelle" disabled="true" type="radio" name="type" value="naturelle">Naturelle</li>
         <li><input id="legend_indetermine" disabled="true" type="radio" name="type" checked="checked" value="indéterminé">Indéterminé</li>
-      </ul>       
+      </ul>        
   </div>
 </body>
 </html>
