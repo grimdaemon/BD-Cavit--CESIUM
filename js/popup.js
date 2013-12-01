@@ -11,7 +11,15 @@ var popup=(function() {
 
             //title
             var title=document.getElementById("popupTitle");
-            title.innerHTML=point["nom_cavite"];            
+            if(point["nom_cavite"] == "?"){
+                title.innerHTML=point["type_cavite"];
+            }
+            else if(point["nom_cavite"] == ""){
+                title.innerHTML=point["type_cavite"];
+            }
+            else{
+                title.innerHTML=point["nom_cavite"];
+            }
 
             //text
             var text=document.getElementById("popupText");
@@ -38,7 +46,6 @@ var popup=(function() {
             };
             for(var e in point) {
                 if(labels[e] != undefined){
-                    console.log(point[e])
                     if(point[e] != ""){
                         if(point[e] != "?"){
                             contentHtml += "<li>"+labels[e]+point[e]+"</li>";
