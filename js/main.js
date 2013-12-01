@@ -14,19 +14,6 @@ var main=function() { //launched when the document is ready
         var layers = viewer.centralBody.getImageryLayers();
         var scene = viewer.scene;
         var ellipsoid = viewer.centralBody.getEllipsoid();
-
-        //handle click
-        var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
-        handlerClick.setInputAction(function (movement) {
-            var pickedObject = scene.pick(movement.position);
-            if (!Cesium.defined(pickedObject)) return;
-            if (!pickedObject.primitive) return;
-            if (!pickedObject.primitive.pickable) return;
-            //var point=points[pickedObject.primitive.pointIndex];
-            popup.open();
-            if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
-
-        }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
         
         //var points = [];
 
@@ -70,12 +57,26 @@ var main=function() { //launched when the document is ready
                 }
             }, 100);
 
-            // Defining the extent 
+            //handle click
+            var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
+            handlerClick.setInputAction(function (movement) {
+                var pickedObject = scene.pick(movement.position);
+                if (!Cesium.defined(pickedObject)) return;
+                if (!pickedObject.primitive) return;
+                if (!pickedObject.primitive.pickable) return;
+                var point=dataPoints[pickedObject.primitive.pointIndex];
+                popup.open(point);//["nom_cavite"],point["commune_actuelle"],point["positionnement"],parseFloat(point["x_wgs84"]),parseFloat(point["y_wgs84"]));
+                if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
+
+            }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+
+            // Defining the extent
+            console.log(boundingBox);
             var extent = new Cesium.Extent(
-                Cesium.Math.toRadians(4.7243),
-                Cesium.Math.toRadians(43.7281),
-                Cesium.Math.toRadians(6.7243),
-                Cesium.Math.toRadians(47.7281));
+                Cesium.Math.toRadians(boundingBox[0]),
+                Cesium.Math.toRadians(boundingBox[2]),
+                Cesium.Math.toRadians(boundingBox[1]),
+                Cesium.Math.toRadians(boundingBox[3]));
                 /*Cesium.Math.toRadians(boundingBox["-minlon"]),
                 Cesium.Math.toRadians(boundingBox["-minlat"]),
                 Cesium.Math.toRadians(boundingBox["-maxlon"]),
@@ -89,6 +90,5 @@ var main=function() { //launched when the document is ready
             scene.getAnimations().add(flight);
         });
     }
-
     run();
 };
