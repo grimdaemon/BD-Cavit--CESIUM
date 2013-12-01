@@ -8,6 +8,21 @@
      margin: 10px;
 }
 
+#loading {
+     display: block;
+     position: absolute;
+     right: 10px;
+     top: 10px;
+     background-color: rgba(255,255,255,0.75);
+     color: black;
+     font-family: 'Helvetica';
+}
+
+#loading .text {
+     margin: 10px;
+     font-size: 10pt;
+}
+
 .popup .close {
      margin: 5px;
      float: right;

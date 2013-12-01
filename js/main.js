@@ -34,15 +34,21 @@ var main=function() { //launched when the document is ready
         lib_ajax.get("data/01.json", function(__data) {
             var data = JSON.parse(__data);
 
-            // Adding the points into the scene
+            // Computing the data
             var dataPoints = data.data;
+            htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : 0 / ' + dataPoints.length;
             var i = 0, limit = dataPoints.length, busy = false;
-            var process = setInterval(function() {
+            var process = window.setInterval(function() {
                 if(!busy) {
                     busy = true;
+                    htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : '+i+' / ' + dataPoints.length;
                     var point = dataPoints[i]; 
+                    //console.log(i);
                     var lat = parseFloat(point["x_wgs84"]);
                     var lon = parseFloat(point["y_wgs84"]);
+                    //console.log(point["type_cavite"] + " - " + i + " - " + limit);
+                    htmlInteraction.getElement("legend_"+point["type_cavite"]).disabled = false;
+
                     if(point["type_cavite"] == "naturelle") {
                         var t = new Thumbtrack(ellipsoid, lat, lon);
                         var elements = t.getPrimitives();
@@ -51,12 +57,18 @@ var main=function() { //launched when the document is ready
                             plot.pickable = true;
                         }
                     }
-
-                    if(++i == limit)
-                        clearInterval(process);
+                    
+                    //console.log(i);
+                    if(++i >= limit) {
+                        window.clearInterval(process);
+                        htmlInteraction.getElement('loadingText').innerHTML = '';
+                    }
+                        
+                        
                     busy = false;
+                    //console.log(i + " - " + limit);
                 }
-            }, 10);
+            }, 100);
 
             // Defining the extent 
             var extent = new Cesium.Extent(
