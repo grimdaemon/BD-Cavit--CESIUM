@@ -1,9 +1,24 @@
 var main=function() { //launched when the document is ready
     "use strict"; //use strict javascript    
+    var viewer;
+    var layers;
+    var scene;
+    var ellipsoid;
+
+    var pickCountry = function(id) {
+
+    }
 
     var run = function() {
+        // Events
+        var formCountry = htmlInteraction.getElement("pickCountryForm");
+        formCountry.addEventListener('submit', function(event) {
+            alert("ok");
+            return false;
+        }, false);
+
         //open viewer using NASA cool tiles
-        var viewer = new Cesium.CesiumWidget('cesiumContainer', {
+        viewer = new Cesium.CesiumWidget('cesiumContainer', {
             imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
                 url : 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer',
                 proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
@@ -11,14 +26,32 @@ var main=function() { //launched when the document is ready
         });
 
         // Reference to the layers of cesium
-        var layers = viewer.centralBody.getImageryLayers();
-        var scene = viewer.scene;
-        var ellipsoid = viewer.centralBody.getEllipsoid();
+        layers = viewer.centralBody.getImageryLayers();
+        scene = viewer.scene;
+        ellipsoid = viewer.centralBody.getEllipsoid();
+
+
+        // Loading the bouding box of the france
+        /*lib_ajax.get("data/bouding_box_france.json", function(__data) {
+            var data = JSON.parse(__data);
+            var extent = new Cesium.Extent(
+                Cesium.Math.toRadians(data["long_min"]),
+                Cesium.Math.toRadians(data["lat_min"]),
+                Cesium.Math.toRadians(data["long_max"]),
+                Cesium.Math.toRadians(data["lat_max"]));
+            scene.getAnimations().add(
+                Cesium.CameraFlightPath.createAnimationExtent(scene, 
+                {
+                    destination: extent
+                })
+            );
+        });*/
+
         
-        //var points = [];
+
 
         // Loading datas
-        lib_ajax.get("data/01.json", function(__data) {
+        /*lib_ajax.get("data/01.json", function(__data) {
             var data = JSON.parse(__data);
 
             // Computing the data
@@ -72,22 +105,22 @@ var main=function() { //launched when the document is ready
 
             // Defining the extent
             var extent = new Cesium.Extent(
- +              Cesium.Math.toRadians(4.7243),
- +              Cesium.Math.toRadians(43.7281),
- +              Cesium.Math.toRadians(6.7243),
- +              Cesium.Math.toRadians(47.7281));
+                Cesium.Math.toRadians(4.7243),
+                Cesium.Math.toRadians(43.7281),
+                Cesium.Math.toRadians(6.7243),
+                Cesium.Math.toRadians(47.7281));
                 /*Cesium.Math.toRadians(boundingBox["-minlon"]),
                 Cesium.Math.toRadians(boundingBox["-minlat"]),
                 Cesium.Math.toRadians(boundingBox["-maxlon"]),
                 Cesium.Math.toRadians(boundingBox["-maxlat"]));*/
-            var flight = Cesium.CameraFlightPath.createAnimationExtent(scene, 
+            /*var flight = Cesium.CameraFlightPath.createAnimationExtent(scene, 
             {
                 destination: extent
             });
 
             //scene.getPrimitives().add(points);
             scene.getAnimations().add(flight);
-        });
+        });*/
     }
     run();
 };

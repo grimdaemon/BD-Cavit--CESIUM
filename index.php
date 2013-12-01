@@ -41,12 +41,13 @@
     <div class="text" id="loadingText">Chargement : 0 / ?</div>      
   </div>
   <div class="footer" id="legend">
-      <a class="title">Légende</a><br>
-      <a class="subtitle">Département:</a>
-      <input class="text" type="text" name="dep" value="01 à 90"/>
-      <button class="button" onclick="filter()">Ok</button><br>
-      <a class="subtitle">Type de données:</a><br>
-      <ul class="list" id="legend">
+      <h3>Légende</h3>
+      <form id="pickCountryForm">
+        <label for="dep">Département : </label><input class="text" type="text" name="dep" value="01 à 90"/>
+        <input type="submit" class="button" value="Ok"/>
+      </form>
+      <p>Type de données :</p>
+      <ul class="list">
         <li><input id="legend_carriere" disabled="true" type="radio" name="type" value="carrière">Carrière</li>
         <li><input id="legend_ouv_militaire" disabled="true" type="radio" name="type" value="ouv militaire">Ouvrage militaire</li>
         <li><input id="legend_souterrain" disabled="true" type="radio" name="type" value="souterrain">Souterrain</li>

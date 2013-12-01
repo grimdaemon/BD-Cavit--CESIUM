@@ -72,19 +72,6 @@
      margin: 10px;
 }
 
-.footer .title {
-     padding-left: 50px;
-     font-size: 15pt;
-     font-weight: bold;
-}
-
-.footer .subtitle {
-     padding-top: 10px;
-     padding-left: 10px;
-     font-size: 11pt;
-     font-style: italic;
-}
-
 .footer .text {
      width: 50px;
      height: 20px;
@@ -105,12 +92,19 @@
 }
 
 .footer .button {
+     display:inline-block;
      padding: 0px;
-     float: right;
-     text-align: center;
      width: 20px;
      height: 20px;
      font-size: 9pt;
      border-radius: 5px;
      border:1px solid gray;
+}
+
+.footer h3 {
+     text-align: center;
+}
+
+.clear {
+     clear:both;
 }
