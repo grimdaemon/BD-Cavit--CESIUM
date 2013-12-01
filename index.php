@@ -48,7 +48,7 @@
       </form>
       <p>Type de données :</p>
       <ul class="list">
-        <li><input id="legend_carriere" disabled="true" type="radio" name="type" value="carrière">Carrière</li>
+        <li><input id="legend_carriere" disabled="true" type="radio" name="type" value="carriere">Carrière</li>
         <li><input id="legend_ouv_militaire" disabled="true" type="radio" name="type" value="ouv militaire">Ouvrage militaire</li>
         <li><input id="legend_souterrain" disabled="true" type="radio" name="type" value="souterrain">Souterrain</li>
         <li><input id="legend_ouvrage_civil" id="legend_carriere" disabled="true" type="radio" name="type" value="ouvrage civil">Ouvrage civil</li>
@@ -56,7 +56,7 @@
         <li><input id="legend_cave" disabled="true" type="radio" name="type" value="cave">Cave</li>
         <li><input id="legend_puits" disabled="true" type="radio" name="type" value="puits">Puits</li>
         <li><input id="legend_naturelle" disabled="true" type="radio" name="type" value="naturelle">Naturelle</li>
-        <li><input id="legend_indetermine" disabled="true" type="radio" name="type" checked="checked" value="indéterminé">Indéterminé</li>
+        <li><input id="legend_indetermine" disabled="true" type="radio" name="type" value="indetermine">Indéterminé</li>
       </ul>        
   </div>
 </body>

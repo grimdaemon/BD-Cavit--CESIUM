@@ -17,9 +17,9 @@ Thumbtrack.prototype = {
 
 	getSphere: function() {
 		var sphere = new Cesium.SphereGeometry({
-			radius: this.ratio,
-			stackPartitions: 3,
-			slicePartitions: 3
+			radius: this.ratio*5,
+			stackPartitions: 20,
+			slicePartitions: 20
 		});
 
 		var modelMatrix = 
@@ -27,7 +27,7 @@ Thumbtrack.prototype = {
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
 				),
-				new Cesium.Cartesian3(0.0, 0.0, this.ratio*3)
+				new Cesium.Cartesian3(0.0, 0.0, this.ratio*11)
 			);
 
 		return new Cesium.GeometryInstance({
@@ -38,7 +38,7 @@ Thumbtrack.prototype = {
 
 	getCylinder: function() {
 		var cylinder = new Cesium.CylinderGeometry({
-			length: this.ratio*2,
+			length: this.ratio*10,
 			topRadius: this.ratio/4,
 			bottomRadius: this.ratio/4,
 			slices: 4
@@ -49,7 +49,7 @@ Thumbtrack.prototype = {
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
 				),
-				new Cesium.Cartesian3(0.0, 0.0, this.ratio)
+				new Cesium.Cartesian3(0.0, 0.0, this.ratio*5)
 			);
 
 		return new Cesium.GeometryInstance({

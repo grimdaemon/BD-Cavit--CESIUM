@@ -4,8 +4,15 @@ var main=function() { //launched when the document is ready
     var layers;
     var scene;
     var ellipsoid;
+    var currentCountry;
+    var currentType = "indetermine";
+    var currentThread;
 
-    var pickCountry = function(id) {
+    var clear = function() {
+        scene.getPrimitives().removeAll();
+    }
+
+    var pickCountry = function(id, type) {
         // Loading the bouding box of the country
         lib_ajax.get("data/bbox_dpt_wgs84.json", function(__data) {
             var data = JSON.parse(__data).bbox_dpt_france[id];
@@ -13,6 +20,11 @@ var main=function() { //launched when the document is ready
                 alert("Ce département n'existe pas");
                 return;
             } 
+            currentCountry = id;
+            var radios = htmlInteraction.getElementsByName('type');
+            for(var i = 0; i < radios.length; ++i) 
+                radios[i].disabled = true;            
+            
             var extent = new Cesium.Extent(
                 Cesium.Math.toRadians(data["long_min"]),
                 Cesium.Math.toRadians(data["lat_min"]),
@@ -25,9 +37,12 @@ var main=function() { //launched when the document is ready
                 })
             );
         });
+        loadData(id, type, true);
+    }
 
-        // Loading the data 
-        var file = lib_ajax.get("data/"+id+".json", function(__data) {
+    var loadData = function(country, type, displayErrors) {
+        clear();
+        lib_ajax.get("data/"+country+".json", function(__data) {
             var data = JSON.parse(__data);
 
             // Computing the data
@@ -45,7 +60,7 @@ var main=function() { //launched when the document is ready
 
                     htmlInteraction.getElement("legend_"+point["type_cavite"]).disabled = false;
 
-                    if(point["type_cavite"] == "naturelle") {
+                    if(point["type_cavite"] == type) {
                         var t = new Thumbtrack(ellipsoid, lat, lon);
                         var elements = t.getPrimitives();
                         for(var p in elements) {
@@ -54,13 +69,14 @@ var main=function() { //launched when the document is ready
                             plot.pointIndex=i;
                         }
                     }
-                    if(++i >= limit) {
+                    if(++i >= limit || currentThread != process) {
                         window.clearInterval(process);
-                        htmlInteraction.getElement('loadingText').innerHTML = '';
+                        htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : 0 / ?';
                     }
                     busy = false;
                 }
             }, 100);
+            currentThread = process;
 
             //handle click
             var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
@@ -81,10 +97,20 @@ var main=function() { //launched when the document is ready
         var formCountry = htmlInteraction.getElement("pickCountryForm");
         formCountry.addEventListener('submit', function(event) {
             event.preventDefault();
-            pickCountry(htmlInteraction.getElement("countryNumber").value);
+            pickCountry(htmlInteraction.getElement("countryNumber").value, currentType);
         });
 
-        /*
+        var radios = htmlInteraction.getElementsByName('type');
+        for(var i = 0; i < radios.length; ++i) {
+            var radio = radios[i];            
+            radio.addEventListener('click', function(event) {
+                if(this.checked) {
+                    currentType = this.value;
+                    loadData(currentCountry, currentType, false);
+                }
+            });
+        }
+
         //open viewer using NASA cool tiles
         viewer = new Cesium.CesiumWidget('cesiumContainer', {
             imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
@@ -92,23 +118,11 @@ var main=function() { //launched when the document is ready
                 proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
             })
         });
-        */
-       
-        
-        viewer = new Cesium.CesiumWidget('cesiumContainer', {
-            imageryProvider : new Cesium.OpenStreetMapImageryProvider({
-                url : 'http://tile.openstreetmap.org/',
-                proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
-            })
-        });
-        
-
 
         // Reference to the layers of cesium
         layers = viewer.centralBody.getImageryLayers();
         scene = viewer.scene;
         ellipsoid = viewer.centralBody.getEllipsoid();
-
 
         // Loading the bouding box of the france
         lib_ajax.get("data/bbox_france_wgs84.json", function(__data) {
