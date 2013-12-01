@@ -1,6 +1,5 @@
 * {
      box-sizing:border-box;
-
 }
 
 #loading {
@@ -34,6 +33,7 @@
      float: right;
      height: 20px;
      border-radius: 5px;
+     border:1px solid gray;
 }
 
 .popup .title {
@@ -112,4 +112,5 @@
      height: 20px;
      font-size: 9pt;
      border-radius: 5px;
+     border:1px solid gray;
 }
