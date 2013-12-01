@@ -43,7 +43,7 @@
   <div class="footer" id="legend">
       <h3>Légende</h3>
       <form id="pickCountryForm">
-        <label for="dep">Département : </label><input class="text" type="text" name="dep" value="01 à 90"/>
+        <label for="dep">Département : </label><input id="countryNumber" class="text" type="text" name="dep" placeholder="01 à 90"/>
         <input type="submit" class="button" value="Ok"/>
       </form>
       <p>Type de données :</p>
