@@ -13,7 +13,7 @@ var main=function() { //launched when the document is ready
         scene.getPrimitives().removeAll();
     }
 
-    var pickCountry = function(id, type) {
+    var pickCountry = function(id) {
         // Loading the bouding box of the country
         lib_ajax.get("data/bbox_dpt_wgs84.json", function(__data) {
             var data = JSON.parse(__data).bbox_dpt_france[id];
@@ -25,11 +25,6 @@ var main=function() { //launched when the document is ready
             var radios = htmlInteraction.getElementsByName('type');
             for(var i = 0; i < radios.length; ++i) 
                 radios[i].disabled = true;            
-            
-            /*if(id == 75 || id == 92 || id == 93 || id == 94 || id == 91 || id == 95 || id == 78) {
-                alert("Pas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
-                return;
-            }*/
             
             var extent = new Cesium.Extent(
                 Cesium.Math.toRadians(data["long_min"]),
@@ -43,34 +38,20 @@ var main=function() { //launched when the document is ready
                 })
             );
         });
-        loadData(id, type, true);
+        loadData(id, true);
     }
 
-    var loadData = function(country, type, displayErrors) {
+    var loadData = function(country, displayErrors) {
         lib_ajax.get("data/"+country+".json", function(__data) {
             var data = JSON.parse(__data);
 
             points = data.data;
 
             // Computing the data
-            var dataPoints = data.data;
-            htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : 0 / ' + dataPoints.length;
-            var i = 0, limit = dataPoints.length, busy = false;
-            var process = window.setInterval(function() {
-                if(!busy) {
-                    busy = true;
-                    htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : '+i+' / ' + dataPoints.length;
-                    var point = dataPoints[i]; 
-                    htmlInteraction.getElement("legend_"+point["type_cavite"]).disabled = false;
-
-                    if(++i >= limit) {
-                        window.clearInterval(process);
-                        htmlInteraction.getElement('loadingText').innerHTML = 'Chargement : 0 / ?';
-                    }
-
-                    busy = false;
-                }
-            }, 1);
+            for(var i = 0; i < points.length; ++i) {
+                var point = points[i];
+                htmlInteraction.getElement("legend_"+point["type_cavite"]).disabled = false;
+            }
         });
     }
 
@@ -83,9 +64,9 @@ var main=function() { //launched when the document is ready
             if(point["type_cavite"] == type) 
                 primitives.push(new Thumbtrack(ellipsoid, lat, lon));
         }
-
+        
         // Loading the primitives
-        scene.getPrimitives().removeAll();
+        clear();
         for(var i = 0; i < primitives.length; ++i) {
             var t = primitives[i];
             var elements = t.getPrimitives();

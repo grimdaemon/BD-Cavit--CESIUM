@@ -1,8 +1,50 @@
+var Thumbtrack_ratio = 100;
+
+var Thumbtrack_cylinder = new Cesium.CylinderGeometry({
+	length: Thumbtrack_ratio*10,
+	topRadius: Thumbtrack_ratio/4,
+	bottomRadius: Thumbtrack_ratio/4,
+	slices: 4
+});
+
+var Thumbtrack_sphere = new Cesium.SphereGeometry({
+	radius: Thumbtrack_ratio*5,
+	stackPartitions: 20,
+	slicePartitions: 20
+});
+
+var Thumbtrack_Cartesian3Sphere = new Cesium.Cartesian3(0.0, 0.0, Thumbtrack_ratio*11);
+var Thumbtrack_Cartesian3Cylinder = new Cesium.Cartesian3(0.0, 0.0, Thumbtrack_ratio*5);
+
+var Thumbtrack_CylinderAppearance = 
+	new Cesium.EllipsoidSurfaceAppearance({
+		material: new Cesium.Material({
+			fabric: {
+				type: 'Color',
+				uniforms: {
+					color: new Cesium.Color(0, 0, 0, 1)
+				}
+			}
+		})
+	});
+
+var Thumbtrack_SphereAppearance = 
+	new Cesium.EllipsoidSurfaceAppearance({
+	    material : new Cesium.Material({
+	    	fabric: {
+	    		type: 'Color',
+	    		uniforms: {
+	    			color: new Cesium.Color(255, 0, 0, 1)
+	    		}
+	    	}
+	    })
+	});
+
 var Thumbtrack = function(ellipsoid, lat, lon) {
-	this.ratio = 100;
 	this.lat = lat;
 	this.lon = lon;
 	this.ellipsoid = ellipsoid;
+
 };
 
 Thumbtrack.prototype = {
@@ -16,44 +58,29 @@ Thumbtrack.prototype = {
 	},
 
 	getSphere: function() {
-		var sphere = new Cesium.SphereGeometry({
-			radius: this.ratio*5,
-			stackPartitions: 20,
-			slicePartitions: 20
-		});
-
 		var modelMatrix = 
 			Cesium.Matrix4.multiplyByTranslation(
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
-				),
-				new Cesium.Cartesian3(0.0, 0.0, this.ratio*11)
+				), Thumbtrack_Cartesian3Sphere
 			);
 
 		return new Cesium.GeometryInstance({
-			geometry: sphere,
+			geometry: Thumbtrack_sphere,
 			modelMatrix: modelMatrix
 		});
 	},
 
 	getCylinder: function() {
-		var cylinder = new Cesium.CylinderGeometry({
-			length: this.ratio*10,
-			topRadius: this.ratio/4,
-			bottomRadius: this.ratio/4,
-			slices: 4
-		});
-
 		var modelMatrix = 
 			Cesium.Matrix4.multiplyByTranslation(
 				Cesium.Transforms.eastNorthUpToFixedFrame(
 					this.ellipsoid.cartographicToCartesian(Cesium.Cartographic.fromDegrees(this.lat, this.lon))
-				),
-				new Cesium.Cartesian3(0.0, 0.0, this.ratio*5)
+				), Thumbtrack_Cartesian3Cylinder
 			);
 
 		return new Cesium.GeometryInstance({
-			geometry: cylinder,
+			geometry: Thumbtrack_cylinder,
 			modelMatrix: modelMatrix
 		})
 	},
@@ -62,29 +89,11 @@ Thumbtrack.prototype = {
 		return [
 			new Cesium.Primitive({
 	        	geometryInstances: this.getCylinder(),
-	        	appearance: new Cesium.EllipsoidSurfaceAppearance({
-	        		material: new Cesium.Material({
-	        			fabric: {
-	        				type: 'Color',
-	        				uniforms: {
-	        					color: new Cesium.Color(0, 0, 0, 1)
-	        				}
-	        			}
-	        		})
-	        	})
+	        	appearance: Thumbtrack_CylinderAppearance
 	        }),
 			new Cesium.Primitive({
 	            geometryInstances: this.getSphere(),
-	            appearance: new Cesium.EllipsoidSurfaceAppearance({
-	                material : new Cesium.Material({
-	                	fabric: {
-	                		type: 'Color',
-	                		uniforms: {
-	                			color: new Cesium.Color(255, 0, 0, 1)
-	                		}
-	                	}
-	                })
-       			})
+	            appearance: Thumbtrack_SphereAppearance
 	        })
         ];
 	}
