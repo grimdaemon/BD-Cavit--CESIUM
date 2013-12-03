@@ -73,13 +73,6 @@ var main=function() { //launched when the document is ready
                             var plot = scene.getPrimitives().add(elements[p]);
                             plot.pickable = true;
                             plot.pointIndex=i;
-                            var cesiumCoFly=Cesium.Cartographic.fromDegrees(lat, lon, 5000);
-                            plot.onclick=function(direct)  { 
-                                var flight = Cesium.CameraFlightPath.createAnimation(scene, {
-                                    destination : ellipsoid.cartographicToCartesian(cesiumCoFly)
-                                });
-                                scene.getAnimations().add(flight);
-                            }
                         }
                     }
                     if(++i >= limit || currentThread != process) {
@@ -88,28 +81,8 @@ var main=function() { //launched when the document is ready
                     }
                     busy = false;
                 }
-            }, 100);
+            }, 1);
             currentThread = process;
-
-            var handlerMove = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
-            handlerMove.setInputAction(function (movement) {
-                var pickedObject = scene.pick(movement.endPosition);           
-                var isPick=Cesium.defined(pickedObject);
-                if (isPick) isPick=pickedObject.primitive;
-                if (isPick) isPick=pickedObject.primitive.pickable;
-
-                if (isPick) {
-                    if (cursor=="default"){
-                        scene.getCanvas().style.cursor="pointer";
-                        cursor="pointer";
-                    }
-                } else {
-                    if (cursor=="pointer"){
-                        scene.getCanvas().style.cursor="auto";
-                        cursor="default";
-                    }
-                }
-            }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
             //handle click
             var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
