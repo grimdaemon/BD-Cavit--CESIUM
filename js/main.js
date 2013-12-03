@@ -18,9 +18,13 @@ var main=function() { //launched when the document is ready
         lib_ajax.get("data/bbox_dpt_wgs84.json", function(__data) {
             var data = JSON.parse(__data).bbox_dpt_france[id];
             if(data == undefined) {
-                alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
+                alert("Ce département n'existe pas\n");
                 return;
             } 
+            if(id == 75 || id == 92  || id ==93 || id == 94 || id ==78 || id ==91 || id ==95) {
+                 alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
+                return;
+            }
             currentCountry = id;
             var radios = htmlInteraction.getElementsByName('type');
             for(var i = 0; i < radios.length; ++i) 
