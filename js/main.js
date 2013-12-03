@@ -55,30 +55,24 @@ var main=function() { //launched when the document is ready
         });
     }
 
-    var switchType = function(type) {
-        var primitives = [];
+    var switchType = function(type_) {
+        clear();
         for(var i = 0; i < points.length; ++i) {
             var point = points[i];
             var lat = parseFloat(point["x_wgs84"]);
             var lon = parseFloat(point["y_wgs84"]);
-            if(point["type_cavite"] == type) 
-                primitives.push(new Thumbtrack(ellipsoid, lat, lon));
-        }
-        
-        // Loading the primitives
-        clear();
-        for(var i = 0; i < primitives.length; ++i) {
-            var t = primitives[i];
-            var elements = t.getPrimitives();
-            for(var p in elements) {
-                var plot = scene.getPrimitives().add(elements[p]);
-                plot.pickable = true;
-                plot.pointIndex = i;
-            }
+            if(point["type_cavite"] == type_) {
+                var t = new Thumbtrack(ellipsoid, lat, lon);
+                var elements = t.getPrimitives();
+                for(var p in elements) {
+                    var plot = scene.getPrimitives().add(elements[p]);
+                    plot.pickable = true;
+                    plot.pointIndex = i;
+                }
+            }   
         }
 
         //handle click
-        // TODO: correction?
         var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
         handlerClick.setInputAction(function (movement) {
             var pickedObject = scene.pick(movement.position);
@@ -86,6 +80,7 @@ var main=function() { //launched when the document is ready
             if (!pickedObject.primitive) return;
             if (!pickedObject.primitive.pickable) return;
             var point=points[pickedObject.primitive.pointIndex];
+            console.log(point);
             popup.open(point);
             if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
