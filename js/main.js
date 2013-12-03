@@ -1,4 +1,8 @@
-var main=function() { //launched when the document is ready
+/*
+ * main.js
+ * Launched when the document is ready and manage the loading of data
+ */
+var main=function() { 
     "use strict"; //use strict javascript    
     var viewer;
     var layers;
@@ -9,12 +13,18 @@ var main=function() { //launched when the document is ready
     var currentType = "indetermine";
     var points = [];
 
+    /*
+     * This function remove all the primitives
+     */
     var clear = function() {
         scene.getPrimitives().removeAll();
     }
 
+    /*
+     * This function pick on the extent of the department and start the loading
+     */
     var pickCountry = function(id) {
-        // Loading the bouding box of the country
+        // Loading the bouding box of the country and check if his defined
         lib_ajax.get("data/bbox_dpt_wgs84.json", function(__data) {
             var data = JSON.parse(__data).bbox_dpt_france[id];
             if(data == undefined) {
@@ -41,12 +51,13 @@ var main=function() { //launched when the document is ready
         loadData(id, true);
     }
 
+    /*
+     * This function load the data in memory
+     */
     var loadData = function(country, displayErrors) {
         lib_ajax.get("data/"+country+".json", function(__data) {
             var data = JSON.parse(__data);
-
             points = data.data;
-
             // Computing the data
             for(var i = 0; i < points.length; ++i) {
                 var point = points[i];
@@ -55,6 +66,9 @@ var main=function() { //launched when the document is ready
         });
     }
 
+    /*
+     * This function manage the changes of type of cavity and display the thumbtrack
+     */
     var switchType = function(type_) {
         clear();
         for(var i = 0; i < points.length; ++i) {
@@ -72,7 +86,7 @@ var main=function() { //launched when the document is ready
             }   
         }
 
-        //handle click
+        //This part manage the calling of popup when a click is detect on a thumbtrack
         var handlerClick = new Cesium.ScreenSpaceEventHandler(scene.getCanvas());
         handlerClick.setInputAction(function (movement) {
             var pickedObject = scene.pick(movement.position);
@@ -80,21 +94,27 @@ var main=function() { //launched when the document is ready
             if (!pickedObject.primitive) return;
             if (!pickedObject.primitive.pickable) return;
             var point=points[pickedObject.primitive.pointIndex];
-            console.log(point);
             popup.open(point);
             if (pickedObject.primitive.onclick) pickedObject.primitive.onclick(true);
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
     }
 
+    /*
+     * This function remove all the primitives
+     */
     var run = function() {
-        // Events
+        /* Manage the several Events
+         * This event listen the text box and read the department number
+         */
         var formCountry = htmlInteraction.getElement("pickCountryForm");
         formCountry.addEventListener('submit', function(event) {
             event.preventDefault();
             pickCountry(htmlInteraction.getElement("countryNumber").value);
             switchType(currentType);
         });
-
+        /*
+         * This event listen the radio box and Check the type of cavity
+         */
         var radios = htmlInteraction.getElementsByName('type');
         for(var i = 0; i < radios.length; ++i) {
             var radio = radios[i];            
@@ -106,7 +126,7 @@ var main=function() { //launched when the document is ready
             });
         }
 
-        //open viewer using NASA cool tiles
+        //open viewer using ArcGIS world street map
         viewer = new Cesium.CesiumWidget('cesiumContainer', {
             imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
                 url : 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer',
