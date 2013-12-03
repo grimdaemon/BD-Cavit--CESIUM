@@ -37,15 +37,19 @@
     <div class="title" style="display:block" id="popupTitle"></div>
     <div id="popupText"></div>      
   </div>
+  <!-- Display the load indicator -->
   <div id="loading">
     <div class="text" id="loadingText">Chargement : 0 / ?</div>      
   </div>
+  <!-- Display the legend -->
   <div class="footer" id="legend">
       <h3>Légende</h3>
+      <!-- Search the country -->
       <form id="pickCountryForm">
         <label for="dep">Département : </label><input id="countryNumber" class="text" type="text" name="dep" placeholder="01 à 90"/>
         <input type="submit" class="button" value="Ok"/>
       </form>
+      <!-- Manage the type of data -->
       <p>Type de données :</p>
       <ul class="list">
         <li><input id="legend_carriere" disabled="true" type="radio" name="type" value="carriere">Carrière</li>

@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 
+# This script permit to transform a shape file in JSON
+# with the bounding box of France country
+
 
 from osgeo import ogr
 
