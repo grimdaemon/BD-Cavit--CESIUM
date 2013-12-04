@@ -20,37 +20,27 @@ var main=function() {
      */
     var clear = function() {
         scene.getPrimitives().removeAll();
-    
-    console.log("yahou1")
     }
 
     /*
      * This function pick on the extent of the department and start the loading
      */
     var pickCountry = function(id) {
-        console.log("yahou")
         // Loading the bouding box of the country and check if his defined
         lib_ajax.get("data/bbox_dpt_wgs84.json", function(__data) {
             var data = JSON.parse(__data).bbox_dpt_france[id];
             
-            for (var i=0;i<departementsIGC.length;i++)
-            { 
-              if(departementsIGC[i] == id) {
-                alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
-                return;
-              }
+            for (var i=0;i<departementsIGC.length;i++){
+                if(departementsIGC[i] == id) {
+                    alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
+                    return;
+                }
             }
             
             if(data == undefined) {
                 alert("Ce département n'existe pas\n");
                 return;
-            } 
-            /*
-            if(id == 75 || id == 92  || id ==93 || id == 94 || id ==78 || id ==91 || id ==95) {
-                 alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
-                return;
             }
-            */
             currentCountry = id;
             var radios = htmlInteraction.getElementsByName('type');
             for(var i = 0; i < radios.length; ++i) 
