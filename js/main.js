@@ -32,7 +32,7 @@ var main=function() {
             
             for (var i=0;i<departementsIGC.length;i++){
                 if(departementsIGC[i] == id) {
-                    alert("Ce département n'existe pas\nPas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
+                    alert("Pas de données BRGM disponibles pour les départements suivants :\n\n\n75, 92, 93, 94\nVeuillez vous renseigner auprès de l'IGC de Paris\n\n78, 91, 95\nVeuillez vous renseigner auprès de l'IGC de Versailles");
                     return;
                 }
             }
