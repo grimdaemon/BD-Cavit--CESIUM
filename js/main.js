@@ -136,6 +136,7 @@ var main=function() {
             });
         }
 
+       
         //open viewer using ArcGIS world street map
         viewer = new Cesium.CesiumWidget('cesiumContainer', {
             imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
@@ -143,6 +144,24 @@ var main=function() {
                 proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
             })
         });
+      
+               
+        //open viewer using OSM world street map
+        viewerOsm = new Cesium.CesiumWidget('cesiumContainer', {
+            imageryProvider : new Cesium.OpenStreetMapImageryProvider({
+                url : 'http://tile.openstreetmap.org/'
+            })
+        });
+       
+        
+		//open viewer using Bing staellite Imagery world street map
+        viewerBingSat = new Cesium.CesiumWidget('cesiumContainer', {
+            imageryProvider : new Cesium.BingMapsImageryProvider({
+                url: 'http://dev.virtualearth.net',
+                mapStyle: Cesium.BingMapsStyle.AERIAL_WITH_LABELS
+            })
+        });
+
 
         // Reference to the layers of cesium
         layers = viewer.centralBody.getImageryLayers();
