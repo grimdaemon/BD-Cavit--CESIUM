@@ -133,6 +133,14 @@ var main=function() {
             })
         );
         addBaseLayerOption(
+            'bing',
+            new Cesium.BingMapsImageryProvider({
+                url : 'http://dev.virtualearth.net',
+                //key : '',
+                mapStyle: Cesium.BingMapsStyle.AERIAL_WITH_LABELS
+            })
+        );
+        addBaseLayerOption(
             'osm',
             new Cesium.OpenStreetMapImageryProvider ({
                 url : 'http://tile.openstreetmap.org/',
