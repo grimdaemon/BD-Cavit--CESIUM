@@ -116,7 +116,6 @@ var main=function() {
       * This function manage the changes of map
       */
     var switchMap = function(mapID_) {
-        console.log(mapID_);
         imageryLayerCollection.remove(0);
         imageryLayerCollection.add(baseLayer[mapID_]);
     }
