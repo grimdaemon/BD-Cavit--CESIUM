@@ -3,15 +3,18 @@
  * Launched when the document is ready and manage the loading of data
  */
 var main=function() { 
-    
+
     "use strict"; //use strict javascript    
     var viewer;
-    var layers;
+    var imageryLayerCollection;
+    var baseLayer = [];
     var scene;
     var ellipsoid;
     var cursor="default";
     var currentCountry;
     var currentType = "indetermine";
+    var currentMap = "arcgis";
+    var currentMapID = 0;
     var points = [];
     var departementsIGC = new Array(75, 92, 93, 94, 78, 91, 95);
 
@@ -109,6 +112,44 @@ var main=function() {
         }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
     };
 
+     /*
+      * This function manage the changes of map
+      */
+    var switchMap = function(mapID_) {
+        console.log(mapID_);
+        imageryLayerCollection.remove(0);
+        imageryLayerCollection.add(baseLayer[mapID_]);
+    }
+
+    /*
+     * This function load the background of the map
+     */
+    function setupLayers() {
+        addBaseLayerOption(
+            'arcgis',
+            new Cesium.ArcGisMapServerImageryProvider({
+                url : 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer',
+                proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
+            })
+        );
+        addBaseLayerOption(
+            'osm',
+            new Cesium.OpenStreetMapImageryProvider ({
+                url : 'http://tile.openstreetmap.org/',
+                proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
+            })
+        );
+    }
+
+    /*
+     * This function add the background of the map in the Imagery Layer Collection
+     */
+    function addBaseLayerOption(name, imageryProvider) {
+        var layer = new Cesium.ImageryLayer(imageryProvider);
+        layer.name = name;
+        baseLayer.push(layer);
+    }
+
     /*
      * This function remove all the primitives
      */
@@ -135,36 +176,30 @@ var main=function() {
                 }  
             });
         }
+        /*
+         * This event listen the radio box and Check the map
+         */
+        var maps = htmlInteraction.getElementsByName('carte');
+        for(var i = 0; i < maps.length; ++i) {
+            var map = maps[i];            
+            map.addEventListener('click', function(event) {
+                if(this.checked) {
+                    if(currentMapID != this.value){
+                        currentMapID = this.value;
+                        switchMap(currentMapID);
+                    }
+                }  
+            });
+        }
 
        
-        //open viewer using ArcGIS world street map
-        viewer = new Cesium.CesiumWidget('cesiumContainer', {
-            imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
-                url : 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer',
-                proxy : new Cesium.DefaultProxy('proxy/index.php?url=')
-            })
-        });
-      
-               
-        //open viewer using OSM world street map
-        viewerOsm = new Cesium.CesiumWidget('cesiumContainer', {
-            imageryProvider : new Cesium.OpenStreetMapImageryProvider({
-                url : 'http://tile.openstreetmap.org/'
-            })
-        });
-       
-        
-		//open viewer using Bing staellite Imagery world street map
-        viewerBingSat = new Cesium.CesiumWidget('cesiumContainer', {
-            imageryProvider : new Cesium.BingMapsImageryProvider({
-                url: 'http://dev.virtualearth.net',
-                mapStyle: Cesium.BingMapsStyle.AERIAL_WITH_LABELS
-            })
-        });
-
+        //Generate the several layers
+        viewer = new Cesium.CesiumWidget('cesiumContainer');
+        imageryLayerCollection = viewer.centralBody.getImageryLayers();
+        setupLayers();
+        imageryLayerCollection.add(baseLayer[currentMapID]);
 
         // Reference to the layers of cesium
-        layers = viewer.centralBody.getImageryLayers();
         scene = viewer.scene;
         ellipsoid = viewer.centralBody.getEllipsoid();
 
