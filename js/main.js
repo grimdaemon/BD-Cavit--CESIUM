@@ -13,8 +13,7 @@ var main=function() {
     var cursor="default";
     var currentCountry;
     var currentType = "indetermine";
-    var currentMap = "arcgis";
-    var currentMapID = 0;
+    var currentMapID = 2;
     var points = [];
     var departementsIGC = new Array(75, 92, 93, 94, 78, 91, 95);
 
@@ -135,7 +134,7 @@ var main=function() {
             'bing',
             new Cesium.BingMapsImageryProvider({
                 url : 'http://dev.virtualearth.net',
-                //key : '',
+                key : 'AkIUJxcQSZHyyIEJBnabuzfqB7xAeiBz35KDGz-J5VoMu0wjPTx-4y9QlHldc08z',
                 mapStyle: Cesium.BingMapsStyle.AERIAL_WITH_LABELS
             })
         );

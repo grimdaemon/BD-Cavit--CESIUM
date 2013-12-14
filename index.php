@@ -64,9 +64,9 @@
       </ul> 
       <p>Fond de carte :</p>
       <ul class="list">
-        <li><input id="legend_arcgis" type="radio" name="carte" checked="checked" value="0">ArcGIS</li>
+        <li><input id="legend_arcgis" type="radio" name="carte" value="0">ArcGIS</li>
         <li><input id="legend_bing" type="radio" name="carte" value="1">Bing Satellite</li>
-        <li><input id="legend_osm" type="radio" name="carte" value="2">Open Street Map</li>
+        <li><input id="legend_osm" type="radio" name="carte" checked="checked" value="2">Open Street Map</li>
       </ul>       
   </div>
 </body>
